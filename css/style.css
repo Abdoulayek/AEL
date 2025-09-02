@@ -92,6 +92,7 @@ nav ul li a.active::after {
     font-size: 24px;
     cursor: pointer;
     color: var(--primary-color);
+    z-index: 1000;
 }
 
 /* Hero Section */
@@ -425,6 +426,28 @@ footer {
 @media (max-width: 768px) {
     nav {
         display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: var(--accent-color);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+    
+    nav.active {
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
     
     .mobile-menu {
