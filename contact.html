@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AFRIK EXPRESS LOGISTICS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Additional styles for contact page */
+        .contact-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/camion.png');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--accent-color);
+            margin-top: 90px;
+        }
+        
+        .contact-hero h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .contact-section {
+            padding: 80px 0;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .contact-details {
+            margin-top: 40px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+        
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+        
+        .contact-text h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .contact-text p {
+            margin-bottom: 5px;
+        }
+        
+        .contact-form h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(0, 102, 51, 0.2);
+        }
+        
+        .form-group input.error,
+        .form-group textarea.error,
+        .form-group select.error {
+            border-color: #e74c3c;
+        }
+        
+        .form-btn {
+            background-color: var(--primary-color);
+            color: var(--accent-color);
+            border: none;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .form-btn:hover {
+            background-color: #004d26;
+        }
+        
+        .success-message {
+            background-color: #27ae60;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .map-section {
+            padding: 80px 0;
+            background-color: var(--cream-color);
+        }
+        
+        .map-section h2 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .map-container {
+            height: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="AFRIK EXPRESS LOGISTICS">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Contactez-Nous</h1>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Restons en Contact</h2>
+                    <p>Vous avez des questions sur nos services ou vous souhaitez obtenir un devis personnalisé? N'hésitez pas à nous contacter. Notre équipe est à votre disposition pour répondre à toutes vos demandes.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <h3>Siège Social</h3>
+                                <p>Zone Industrielle de Yopougon</p>
+                                <p>Abidjan, Côte d'Ivoire</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="contact-text">
+                                <h3>Téléphone</h3>
+                                <p>+225 XX XX XX XX (Bureau principal)</p>
+                                <p>+225 XX XX XX XX (Service client)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>contact@afrikexpresslogistics.com</p>
+                                <p>info@afrikexpresslogistics.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-text">
+                                <h3>Heures d'Ouverture</h3>
+                                <p>Lundi - Vendredi: 8h00 - 18h00</p>
+                                <p>Samedi: 8h00 - 13h00</p>
+                                <p>Dimanche: Fermé</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Envoyez-nous un Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom Complet*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Concerné</label>
+                            <select id="service" name="service">
+                                <option value="">Sélectionnez un service</option>
+                                <option value="colis">Transport de Colis</option>
+                                <option value="marchandises">Transport de Marchandises</option>
+                                <option value="carburants">Transport de Carburants</option>
+                                <option value="btp">Services BTP</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="form-btn">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2>Notre Emplacement</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127103.37148911194!2d-4.0833007!3d5.3484716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2sYopougon%2C%20Abidjan%2C%20C%C3%B4te%20d&#39;Ivoire!5e0!3m2!1sfr!2sfr!4v1662123456789!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Prêt à collaborer avec nous?</h2>
+            <p>AFRIK EXPRESS LOGISTICS, ensemble, nous faisons avancer l'Afrique.</p>
+            <a href="#contact-form" class="btn">Contactez-nous maintenant</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="AFRIK EXPRESS LOGISTICS">
+                    <p>AFRIK EXPRESS LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <li>Transport de Colis</li>
+                        <li>Transport de Marchandises</li>
+                        <li>Transport de Carburants</li>
+                        <li>Services BTP</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</p>
+                    <p><i class="fas fa-phone"></i> +225 XX XX XX XX</p>
+                    <p><i class="fas fa-envelope"></i> contact@afrikexpresslogistics.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

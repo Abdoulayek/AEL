@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
+  <!-- AEL Logo based on the provided images -->
+  <style>
+    .text-primary { font: bold 60px sans-serif; fill: #006633; }
+    .text-secondary { font: normal 16px sans-serif; fill: #333333; }
+    .accent-line { fill: #4CAF50; }
+  </style>
+  
+  <!-- Main Logo Text -->
+  <text x="20" y="65" class="text-primary">AEL</text>
+  
+  <!-- Accent Lines -->
+  <rect x="20" y="75" width="180" height="4" class="accent-line" />
+  <rect x="20" y="30" width="60" height="4" class="accent-line" />
+  
+  <!-- Company Full Name -->
+  <text x="20" y="95" class="text-secondary">AFRIK EXPRESS LOGISTICS</text>
+</svg>
