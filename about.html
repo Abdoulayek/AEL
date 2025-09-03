@@ -190,6 +190,142 @@
             margin-bottom: 10px;
         }
         
+        .about-submenu {
+            background-color: var(--cream-color);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .submenu ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+        
+        .submenu ul li {
+            margin: 0 15px;
+        }
+        
+        .submenu ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 5px;
+            display: block;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .submenu ul li a:hover, .submenu ul li a.active {
+            color: var(--primary-color);
+        }
+        
+        .submenu ul li a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title h2 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+        
+        .careers-section, .charity-section {
+            padding: 80px 0;
+            background-color: var(--cream-color);
+        }
+        
+        .careers-grid, .charity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .career-item, .charity-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .career-item:hover, .charity-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .career-item img, .charity-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .career-content, .charity-content {
+            padding: 20px;
+        }
+        
+        .career-content h3, .charity-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .career-content p, .charity-content p {
+            margin-bottom: 15px;
+        }
+        
+        .advantages-section {
+            padding: 80px 0;
+        }
+        
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .advantage-item {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: var(--accent-color);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .advantage-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .advantage-item i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .advantage-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
         @media (max-width: 768px) {
             .mission-vision-container {
                 grid-template-columns: 1fr;
@@ -216,6 +352,15 @@
             .timeline-item.right::after {
                 left: 18px;
             }
+            
+            .submenu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .submenu ul li {
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
@@ -223,12 +368,21 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.svg" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html" class="active">À Propos</a></li>
+                    <li class="has-submenu">
+                        <a href="#" class="active">À Propos</a>
+                        <ul class="submenu">
+                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                        </ul>
+                    </li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -247,8 +401,63 @@
 
     <section class="about-section">
         <div class="container">
-            <h2>AFRIK EXPRESS LOGISTICS</h2>
-            <p>AFRIK EXPRESS LOGISTICS est une entreprise de transport et de logistique basée en Côte d'Ivoire, spécialisée dans le transport de colis, marchandises, carburants et services BTP à travers l'Afrique de l'Ouest.</p>
+            <div class="section-title">
+                <h2>À Propos de Nous</h2>
+                <p>Découvrez AFRIK EXPRESS LOGISTICS</p>
+            </div>
+            <p>AFRIK EXPRESS LOGISTICS est une entreprise de transport et de logistique basée en Côte d'Ivoire, spécialisée dans le , marchandises, carburants et services BTP à travers l'Afrique de l'Ouest.</p>
+            <p>Fondée avec la vision de contribuer au développement économique de l'Afrique, notre entreprise s'engage à fournir des services logistiques fiables, efficaces et de haute qualité qui répondent aux besoins spécifiques de nos clients.</p>
+        </div>
+    </section>
+
+    <section class="about-navigation">
+        <div class="container">
+            <div class="section-title">
+                <h2>Explorez notre univers</h2>
+                <p>Découvrez tous les aspects de notre entreprise</p>
+            </div>
+            <div class="about-nav-grid">
+                <div class="about-nav-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Qui sommes-nous ?</h3>
+                    <p>Découvrez notre histoire, notre mission et notre vision pour l'avenir de la logistique en Afrique de l'Ouest.</p>
+                    <a href="qui-sommes-nous.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="about-nav-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Pourquoi bosser avec nous ?</h3>
+                    <p>Explorez les avantages de choisir AFRIK EXPRESS LOGISTICS comme partenaire logistique pour vos besoins en Afrique de l'Ouest.</p>
+                    <a href="pourquoi-nous.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="about-nav-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Rencontrez l'équipe</h3>
+                    <p>Faites connaissance avec les professionnels expérimentés qui dirigent notre entreprise et assurent l'excellence de nos services.</p>
+                    <a href="equipe.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="about-nav-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Carrières</h3>
+                    <p>Rejoignez notre équipe dynamique et contribuez au développement de la logistique en Afrique de l'Ouest.</p>
+                    <a href="carrieres.html" class="btn">En savoir plus</a>
+                </div>
+                <div class="about-nav-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Oeuvre caritative</h3>
+                    <p>Découvrez notre engagement social et nos initiatives pour contribuer au bien-être des communautés locales.</p>
+                    <a href="oeuvre-caritative.html" class="btn">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qui-sommes-nous" class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Qui sommes-nous ?</h2>
+                <p>Découvrez AFRIK EXPRESS LOGISTICS</p>
+            </div>
+            <p>AFRIK EXPRESS LOGISTICS est une entreprise de transport et de logistique basée en Côte d'Ivoire, spécialisée dans le , marchandises, carburants et services BTP à travers l'Afrique de l'Ouest.</p>
             <p>Fondée avec la vision de contribuer au développement économique de l'Afrique, notre entreprise s'engage à fournir des services logistiques fiables, efficaces et de haute qualité qui répondent aux besoins spécifiques de nos clients.</p>
             <p>Avec une flotte moderne et une équipe de professionnels expérimentés, nous offrons des solutions logistiques complètes adaptées aux défis uniques du marché africain. Notre engagement envers l'excellence et l'innovation nous positionne comme un partenaire de confiance pour toutes vos exigences en matière de transport et de logistique.</p>
             <p>Chez AFRIK EXPRESS LOGISTICS, nous croyons que la logistique est plus qu'un simple transport de marchandises - c'est un élément essentiel du développement économique et social de notre continent. C'est pourquoi notre slogan "Ensemble, nous faisons avancer l'Afrique" reflète notre engagement à contribuer positivement à l'économie africaine.</p>
@@ -281,6 +490,47 @@
                         <li>Créer des emplois de qualité et développer les talents locaux</li>
                         <li>Adopter des pratiques commerciales durables et respectueuses de l'environnement</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pourquoi-nous" class="advantages-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pourquoi bosser avec nous ?</h2>
+                <p>Les avantages de travailler avec AFRIK EXPRESS LOGISTICS</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sécurité garantie</h3>
+                    <p>Nous mettons en place des protocoles de sécurité rigoureux pour assurer la protection de vos marchandises à chaque étape du transport.</p>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Ponctualité</h3>
+                    <p>Nous respectons scrupuleusement les délais de livraison convenus, vous permettant de planifier efficacement vos opérations.</p>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Flotte moderne</h3>
+                    <p>Notre flotte de véhicules est régulièrement entretenue et équipée des dernières technologies pour un transport optimal.</p>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>Service client dédié</h3>
+                    <p>Une équipe attentive et réactive est à votre disposition pour répondre à toutes vos questions et besoins.</p>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Couverture régionale</h3>
+                    <p>Notre réseau s'étend à travers l'Afrique de l'Ouest, vous offrant une solution logistique complète pour la région.</p>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Partenariat durable</h3>
+                    <p>Nous construisons des relations à long terme avec nos clients, basées sur la confiance et la satisfaction mutuelle.</p>
                 </div>
             </div>
         </div>
@@ -330,9 +580,12 @@
         </div>
     </section>
 
-    <section class="team-section">
+    <section id="equipe" class="team-section">
         <div class="container">
-            <h2>Notre Équipe de Direction</h2>
+            <div class="section-title">
+                <h2>Rencontrez l'Équipe</h2>
+                <p>Les professionnels qui font avancer AFRIK EXPRESS LOGISTICS</p>
+            </div>
             <div class="team-grid">
                 <div class="team-member">
                     <img src="images/team1.jpg" alt="Directeur Général">
@@ -361,6 +614,78 @@
             </div>
         </div>
     </section>
+    
+    <section id="carrieres" class="careers-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Carrières</h2>
+                <p>Rejoignez notre équipe dynamique</p>
+            </div>
+            <p>Chez AFRIK EXPRESS LOGISTICS, nous sommes toujours à la recherche de talents passionnés pour rejoindre notre équipe en pleine croissance. Nous offrons un environnement de travail stimulant, des opportunités de développement professionnel et la chance de contribuer au développement économique de l'Afrique.</p>
+            <div class="careers-grid">
+                <div class="career-item">
+                    <img src="images/career1.jpg" alt="Chauffeurs">
+                    <div class="career-content">
+                        <h3>Chauffeurs Professionnels</h3>
+                        <p>Nous recherchons des chauffeurs expérimentés pour notre flotte de véhicules de transport.</p>
+                        <p><strong>Exigences :</strong> Permis de conduire valide, expérience dans le transport de marchandises, connaissance des routes d'Afrique de l'Ouest.</p>
+                    </div>
+                </div>
+                <div class="career-item">
+                    <img src="images/career2.jpg" alt="Logistique">
+                    <div class="career-content">
+                        <h3>Spécialistes en Logistique</h3>
+                        <p>Rejoignez notre équipe de planification logistique pour optimiser nos opérations.</p>
+                        <p><strong>Exigences :</strong> Diplôme en logistique ou expérience équivalente, compétences analytiques, maîtrise des outils informatiques.</p>
+                    </div>
+                </div>
+                <div class="career-item">
+                    <img src="images/career3.jpg" alt="Commercial">
+                    <div class="career-content">
+                        <h3>Commerciaux</h3>
+                        <p>Développez notre portefeuille clients et établissez des relations commerciales durables.</p>
+                        <p><strong>Exigences :</strong> Expérience en vente B2B, excellentes compétences en communication, connaissance du secteur logistique.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <p>Pour postuler, envoyez votre CV et lettre de motivation à <strong>carrieres@afrikexpresslogistics.com</strong></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="oeuvre-caritative" class="charity-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Oeuvre Caritative</h2>
+                <p>Notre engagement pour un impact social positif</p>
+            </div>
+            <p>Chez AFRIK EXPRESS LOGISTICS, nous croyons fermement à notre responsabilité sociale. Nous nous engageons activement dans diverses initiatives caritatives visant à améliorer les conditions de vie des communautés locales et à contribuer au développement durable de l'Afrique.</p>
+            <div class="charity-grid">
+                <div class="charity-item">
+                    <img src="images/charity1.jpg" alt="Éducation">
+                    <div class="charity-content">
+                        <h3>Soutien à l'Éducation</h3>
+                        <p>Nous finançons des bourses d'études pour les jeunes défavorisés et contribuons à la construction d'écoles dans les zones rurales.</p>
+                    </div>
+                </div>
+                <div class="charity-item">
+                    <img src="images/charity2.jpg" alt="Santé">
+                    <div class="charity-content">
+                        <h3>Initiatives de Santé</h3>
+                        <p>Nous organisons régulièrement des campagnes de santé et fournissons des équipements médicaux aux centres de santé communautaires.</p>
+                    </div>
+                </div>
+                <div class="charity-item">
+                    <img src="images/charity3.jpg" alt="Environnement">
+                    <div class="charity-content">
+                        <h3>Protection de l'Environnement</h3>
+                        <p>Nous participons à des initiatives de reboisement et promouvons des pratiques commerciales respectueuses de l'environnement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="cta">
         <div class="container">
@@ -373,10 +698,10 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.svg" alt="AFRIK EXPRESS LOGISTICS">
+                <!-- <div class="footer-logo">
+                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
                     <p>AFRIK EXPRESS LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
-                </div>
+                </div> -->
                 <div class="footer-links">
                     <h3>Liens Rapides</h3>
                     <ul>
@@ -389,7 +714,7 @@
                 <div class="footer-services">
                     <h3>Nos Services</h3>
                     <ul>
-                        <li>Transport de Colis</li>
+                        <li></li>
                         <li>Transport de Marchandises</li>
                         <li>Transport de Carburants</li>
                         <li>Services BTP</li>
@@ -397,7 +722,7 @@
                 </div>
                 <div class="footer-contact">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</p>
                     <p><i class="fas fa-phone"></i> +225 XX XX XX XX</p>
                     <p><i class="fas fa-envelope"></i> contact@afrikexpresslogistics.com</p>
                     <div class="social-icons">

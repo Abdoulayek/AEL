@@ -187,12 +187,21 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.svg" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">À Propos</a></li>
+                    <li class="has-submenu">
+                        <a href="#">À Propos</a>
+                        <ul class="submenu">
+                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                        </ul>
+                    </li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
@@ -220,24 +229,24 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="contact-text">
                                 <h3>Siège Social</h3>
-                                <p>Zone Industrielle de Yopougon</p>
-                                <p>Abidjan, Côte d'Ivoire</p>
+                                <p>Boulevard Félix Houphouët Boigni</p>
+                                <p>En face de solibra immeuble la balance au 2 eme étage</p>
+                                <p>Bp 1327</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
                             <div class="contact-text">
                                 <h3>Téléphone</h3>
-                                <p>+225 XX XX XX XX (Bureau principal)</p>
-                                <p>+225 XX XX XX XX (Service client)</p>
+                                <p>+225 07 48 786 249</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div class="contact-text">
                                 <h3>Email</h3>
-                                <p>contact@afrikexpresslogistics.com</p>
-                                <p>info@afrikexpresslogistics.com</p>
+                                <p>contact@ael.com</p>
+                                <p>info@ael.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -255,31 +264,43 @@
                     <h2>Envoyez-nous un Message</h2>
                     <form id="contact-form">
                         <div class="form-group">
-                            <label for="name">Nom Complet*</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="company">Nom de l'entreprise*</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Nom*</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstname">Prénom*</label>
+                            <input type="text" id="firstname" name="firstname" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email*</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Téléphone*</label>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Concerné</label>
-                            <select id="service" name="service">
+                            <label for="service">Service Concerné*</label>
+                            <select id="service" name="service" required>
                                 <option value="">Sélectionnez un service</option>
-                                <option value="colis">Transport de Colis</option>
+                                <option value="miniers">Transport de produits miniers</option>
                                 <option value="marchandises">Transport de Marchandises</option>
                                 <option value="carburants">Transport de Carburants</option>
                                 <option value="btp">Services BTP</option>
                                 <option value="autre">Autre</option>
                             </select>
                         </div>
+                        <div class="form-group" id="quantity-container">
+                            <label for="quantity">Quantité (tonnes ou litres selon le service)*</label>
+                            <input type="number" id="quantity" name="quantity" min="1" required>
+                        </div>
                         <div class="form-group">
-                            <label for="message">Message*</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"></textarea>
                         </div>
                         <button type="submit" class="form-btn">Envoyer le Message</button>
                     </form>
@@ -308,10 +329,10 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.svg" alt="AFRIK EXPRESS LOGISTICS">
+                <!-- <div class="footer-logo">
+                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
                     <p>AFRIK EXPRESS LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
-                </div>
+                </div> -->
                 <div class="footer-links">
                     <h3>Liens Rapides</h3>
                     <ul>
@@ -324,7 +345,7 @@
                 <div class="footer-services">
                     <h3>Nos Services</h3>
                     <ul>
-                        <li>Transport de Colis</li>
+                        <li></li>
                         <li>Transport de Marchandises</li>
                         <li>Transport de Carburants</li>
                         <li>Services BTP</li>
@@ -332,9 +353,11 @@
                 </div>
                 <div class="footer-contact">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</p>
-                    <p><i class="fas fa-phone"></i> +225 XX XX XX XX</p>
-                    <p><i class="fas fa-envelope"></i> contact@afrikexpresslogistics.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni en face de solibra immeuble la balance au 2 eme étage</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bp 1327</p>
+                    <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
+                    <p><i class="fas fa-envelope"></i> contact@ael.com</p>
+                    <p><i class="fas fa-envelope"></i> info@ael.com</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>

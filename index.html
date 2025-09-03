@@ -11,12 +11,21 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.svg" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="about.html">À Propos</a></li>
+                    <li class="has-submenu">
+                        <a href="#">À Propos</a>
+                        <ul class="submenu">
+                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                        </ul>
+                    </li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -29,10 +38,10 @@
 
     <section class="hero">
         <div class="container">
-            <h1>AFRIK EXPRESS LOGISTICS</h1>
-            <h2>Ensemble, nous faisons avancer l'Afrique.</h2>
-            <p>Votre partenaire de confiance pour le transport de colis, marchandises, carburants et BTP en Côte d'Ivoire</p>
-            <a href="contact.html" class="btn">Contactez-nous</a>
+            <h1>AFRIK EXPRESS & LOGISTICS</h1>
+            <h2>Ensemble, vers l'Afrique de demain.<h2>
+            <!-- <p>Votre partenaire de confiance pour le transport de produits, marchandises, carburants et BTP en Côte d'Ivoire</p> -->
+            <a href="contact.html" class="btn">Demandez un devis</a>
         </div>
     </section>
 
@@ -42,8 +51,8 @@
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-box"></i>
-                    <h3>Transport de Colis</h3>
-                    <p>Livraison rapide et sécurisée de vos colis partout en Côte d'Ivoire et en Afrique de l'Ouest.</p>
+                    <h3>Transport de produits miniers</h3>
+                    <p>Transport sécurisé et fiable de produits miniers (cuivre, bauxite, manganese, etc.) avec des équipements spécialisés et une expertise en matière de conformité réglementaire.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-truck"></i>
@@ -77,36 +86,12 @@
                 <a href="about.html" class="btn">En savoir plus</a>
             </div>
             <div class="about-image">
-                <img src="images/truck.png" alt="Camion AEL">
+                <img src="images/truck_brand.png" alt="Camion AEL">
             </div>
         </div>
     </section>
 
-    <section class="testimonials">
-        <div class="container">
-            <h2>Ce que disent nos clients</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial">
-                    <p>"AFRIK EXPRESS LOGISTICS a révolutionné notre chaîne d'approvisionnement avec leur service fiable et ponctuel."</p>
-                    <div class="client">
-                        <h4>Entreprise de Distribution, Abidjan</h4>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <p>"Grâce à leur expertise en transport de carburant, nous avons pu étendre nos opérations dans toute la région."</p>
-                    <div class="client">
-                        <h4>Société Pétrolière, San Pedro</h4>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <p>"Un partenaire indispensable pour nos projets de construction. Livraisons toujours à temps et service client exceptionnel."</p>
-                    <div class="client">
-                        <h4>Entreprise de Construction, Yamoussoukro</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Section des témoignages supprimée -->
 
     <section class="cta">
         <div class="container">
@@ -119,10 +104,10 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/logo.svg" alt="AFRIK EXPRESS LOGISTICS">
+                <!-- <div class="footer-logo">
+                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
                     <p>AFRIK EXPRESS LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
-                </div>
+                </div> -->
                 <div class="footer-links">
                     <h3>Liens Rapides</h3>
                     <ul>
@@ -135,7 +120,7 @@
                 <div class="footer-services">
                     <h3>Nos Services</h3>
                     <ul>
-                        <li>Transport de Colis</li>
+                        <li>Transport de Produits Miniers</li>
                         <li>Transport de Marchandises</li>
                         <li>Transport de Carburants</li>
                         <li>Services BTP</li>
@@ -143,9 +128,11 @@
                 </div>
                 <div class="footer-contact">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Abidjan, Côte d'Ivoire</p>
-                    <p><i class="fas fa-phone"></i> +225 XX XX XX XX</p>
-                    <p><i class="fas fa-envelope"></i> contact@afrikexpresslogistics.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni en face de solibra immeuble la balance au 2 eme étage</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bp 1327</p>
+                    <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
+                    <p><i class="fas fa-envelope"></i> contact@ael.com</p>
+                    <p><i class="fas fa-envelope"></i> info@ael.com</p>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>

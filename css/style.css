@@ -56,6 +56,7 @@ nav ul {
 
 nav ul li {
     margin-left: 30px;
+    position: relative;
 }
 
 nav ul li a {
@@ -64,6 +65,57 @@ nav ul li a {
     font-weight: 500;
     transition: color 0.3s;
     position: relative;
+    display: block;
+    padding: 5px 0;
+}
+
+nav ul li.has-submenu > a {
+    cursor: default;
+    pointer-events: none;
+}
+
+nav ul li.has-submenu:hover > a {
+    color: var(--primary-color);
+}
+
+/* Sous-menu styles */
+nav ul li ul.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--accent-color);
+    width: 220px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 10px 0;
+    border-radius: 5px;
+    display: block;
+}
+
+nav ul li:hover > ul.submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+nav ul li ul.submenu li {
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li ul.submenu li a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+nav ul li ul.submenu li:last-child a {
+    border-bottom: none;
 }
 
 nav ul li a:hover,
@@ -402,6 +454,194 @@ footer {
     padding-top: 20px;
     text-align: center;
     font-size: 0.9rem;
+}
+
+/* Advantage Cards Styles */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.advantage-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.advantage-card i {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    background-color: var(--cream-color);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    transition: all 0.3s;
+}
+
+.advantage-card:hover i {
+    background-color: var(--primary-color);
+    color: var(--cream-color);
+    transform: rotateY(180deg);
+}
+
+.advantage-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.advantage-card p {
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+/* Testimonials Styles */
+.testimonials {
+    margin-top: 60px;
+    background-color: var(--cream-color);
+    padding: 60px 0;
+    border-radius: 10px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0 30px;
+    line-height: 1.8;
+}
+
+.testimonial p:before,
+.testimonial p:after {
+    content: '\201C';
+    font-size: 60px;
+    position: absolute;
+    color: var(--primary-color);
+    opacity: 0.3;
+    top: -20px;
+    left: 0;
+}
+
+.testimonial p:after {
+    content: '\201D';
+    top: auto;
+    left: auto;
+    bottom: -40px;
+    right: 0;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.client h3 {
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.client h4 {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+/* About Navigation Styles */
+.about-navigation {
+    padding: 80px 0;
+    background-color: var(--accent-color);
+}
+
+.about-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-nav-card {
+    background-color: var(--cream-color);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about-nav-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-nav-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-nav-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.about-nav-card p {
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.about-nav-card .btn {
+    align-self: center;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.about-nav-card .btn:hover {
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 /* Responsive Design */

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rencontrez l'équipe | AFRIK EXPRESS LOGISTICS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Styles généraux pour la page */
+        .about-section {
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .about-section:nth-child(even) {
+            background-color: var(--cream-color);
+        }
+        
+        .about-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title {
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        /* Section d'introduction */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        
+        /* Grille d'équipe */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            border-bottom: 4px solid transparent;
+        }
+        
+        .team-member::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .team-member:hover::before {
+            opacity: 1;
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .team-member:hover img {
+            transform: scale(1.05);
+        }
+        
+        .team-info {
+            padding: 25px 20px;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,1) 20%);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .team-info h3 {
+            margin-bottom: 8px;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .team-info p {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .team-social a {
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s;
+            background-color: var(--primary-color);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .team-social a:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Section culture d'entreprise */
+        .culture-section {
+            background-color: var(--cream-color);
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .culture-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+        }
+        
+        .culture-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            margin-top: 30px;
+            position: relative;
+        }
+        
+        .culture-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            border-radius: 5px 0 0 5px;
+        }
+        
+        .culture-list {
+            margin-top: 30px;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .culture-list li {
+            margin-bottom: 20px;
+            padding-left: 35px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        .culture-list li:last-child {
+            margin-bottom: 0;
+        }
+        
+        .culture-list li strong {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .culture-list li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            background-color: rgba(0, 102, 51, 0.1);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Section divider */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+        
+        /* Hero section */
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="has-submenu">
+                        <a href="#" class="active">À Propos</a>
+                        <ul class="submenu">
+                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html" class="active">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section" style="margin-top: 90px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre équipe de direction</h2>
+                <p>Les experts qui dirigent AFRIK EXPRESS LOGISTICS</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Une équipe d'experts à votre service</h3>
+                    <p>Notre équipe de direction est composée de professionnels expérimentés et passionnés, dédiés à l'excellence opérationnelle et à la satisfaction client.</p>
+                    <p>Avec une expertise combinée de plusieurs décennies dans le secteur de la logistique et du transport en Afrique de l'Ouest, notre équipe possède les connaissances et les compétences nécessaires pour relever les défis logistiques les plus complexes.</p>
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="" alt="Bey Touré">
+                    <div class="team-info">
+                        <h3>Bey Touré</h3>
+                        <p>Directeur Général</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="Fatou Sow">
+                    <div class="team-info">
+                        <h3>Fatou Sow</h3>
+                        <p>Directrice des Opérations</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="Kofi Mensah">
+                    <div class="team-info">
+                        <h3>Kofi Mensah</h3>
+                        <p>Directeur Financier</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="Aminata Touré">
+                    <div class="team-info">
+                        <h3>Aminata Touré</h3>
+                        <p>Directrice Commerciale</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="culture-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre culture d'entreprise</h2>
+                <p>Les valeurs qui nous définissent</p>
+            </div>
+            
+            <p>Chez AFRIK EXPRESS LOGISTICS, nous cultivons un environnement de travail dynamique, inclusif et collaboratif où chaque membre de l'équipe est valorisé et encouragé à atteindre son plein potentiel.</p>
+            
+            <div class="culture-card">
+                <h3>Nos valeurs fondamentales</h3>
+                <ul class="culture-list">
+                    <li>
+                        <strong>Excellence</strong>
+                        Nous nous efforçons d'exceller dans tout ce que nous faisons, en visant constamment à dépasser les attentes de nos clients.
+                    </li>
+                    <li>
+                        <strong>Intégrité</strong>
+                        Nous menons nos activités avec honnêtété, transparence et éthique, en respectant nos engagements envers nos clients, nos employés et nos partenaires.
+                    </li>
+                    <li>
+                        <strong>Innovation</strong>
+                        Nous encourageons la créativité et l'innovation, en cherchant continuellement à améliorer nos services et nos processus.
+                    </li>
+                    <li>
+                        <strong>Collaboration</strong>
+                        Nous croyons au pouvoir du travail d'équipe et de la collaboration pour atteindre des objectifs communs.
+                    </li>
+                    <li>
+                        <strong>Responsabilité sociale</strong>
+                        Nous nous engageons à contribuer positivement aux communautés dans lesquelles nous opérons et à minimiser notre impact environnemental.
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="about-content" style="margin-top: 40px;">
+                <div class="about-text">
+                    <h3>Rejoignez notre équipe</h3>
+                    <p>Nous sommes toujours à la recherche de talents passionnés et motivés pour rejoindre notre équipe. Si vous partagez nos valeurs et souhaitez contribuer à notre mission, nous vous invitons à consulter nos opportunités de carrière.</p>
+                    <a href="carrieres.html" class="btn" style="background-color: var(--primary-color); color: white; display: inline-block; padding: 12px 30px; border-radius: 5px; text-decoration: none; margin-top: 20px; font-weight: bold; transition: all 0.3s ease;">Voir nos opportunités</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- <div class="footer-logo">
+                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                    <p>Votre partenaire logistique de confiance en Afrique de l'Ouest.</p>
+                </div> -->
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <li></li>
+                        <li>Transport de Marchandises</li>
+                        <li>Transport de Carburants</li>
+                        <li>Transport de produits miniers</li>
+                        <li>Services BTP</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</p>
+                    <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
+                    <p><i class="fas fa-envelope"></i> info@ael.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

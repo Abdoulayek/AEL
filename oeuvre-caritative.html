@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Œuvres Caritatives | AFRIK EXPRESS LOGISTICS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Styles pour la page Œuvres Caritatives */
+        .about-section {
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .about-section:nth-child(even) {
+            background-color: var(--cream-color);
+        }
+        
+        .about-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title {
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .mission-vision-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mission-vision-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .mission-vision-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        }
+        
+        .mission-vision-card h3 {
+            color: var(--primary-color);
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            padding-left: 15px;
+        }
+        
+        .mission-vision-card p {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            color: #444;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .feature-list li {
+            padding: 12px 0 12px 35px;
+            position: relative;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            font-size: 1.05rem;
+            color: #444;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list li i {
+            position: absolute;
+            left: 0;
+            top: 14px;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+        
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .stat-item {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .stat-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            margin: 40px 0;
+            opacity: 0.3;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="has-submenu">
+                        <a href="#" class="active">À Propos</a>
+                        <ul class="submenu">
+                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html" class="active">Oeuvre caritative</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>Nos Œuvres Caritatives</h1>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Notre Engagement Social</h2>
+                <p>Contribuer au développement des communautés</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Chez AFRIK EXPRESS LOGISTICS, nous croyons fermement que notre succès est intrinsèquement lié au bien-être des communautés dans lesquelles nous opérons. C'est pourquoi nous avons fait de l'engagement social une partie intégrante de notre identité d'entreprise.</p>
+                    <p>Notre programme d'œuvres caritatives vise à apporter un soutien concret aux communautés locales à travers l'Afrique de l'Ouest, en mettant l'accent sur l'éducation, la santé, l'environnement et le développement économique.</p>
+                    <p>Nous ne considérons pas ces initiatives comme de simples actions de responsabilité sociale d'entreprise, mais comme un véritable investissement dans l'avenir de notre continent. En contribuant au développement des communautés locales, nous participons à la construction d'une Afrique plus forte et plus prospère.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/camion.png" alt="AFRIK EXPRESS LOGISTICS - Engagement Social">
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Bénéficiaires</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Pays d'intervention</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10%</div>
+                    <div class="stat-label">De nos bénéfices</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Domaines d'Intervention</h2>
+            </div>
+            
+            <div class="mission-vision-card">
+                <h3><i class="fas fa-graduation-cap"></i> Éducation</h3>
+                <p>L'éducation est la clé du développement durable. Nous investissons dans des programmes éducatifs qui offrent aux jeunes les compétences nécessaires pour réussir dans un monde en constante évolution.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> Construction et rénovation d'écoles dans les zones rurales</li>
+                    <li><i class="fas fa-book"></i> Distribution de fournitures scolaires aux élèves défavorisés</li>
+                    <li><i class="fas fa-laptop"></i> Mise en place de salles informatiques dans les établissements scolaires</li>
+                    <li><i class="fas fa-user-graduate"></i> Octroi de bourses d'études aux étudiants méritants</li>
+                </ul>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <div class="mission-vision-card">
+                <h3><i class="fas fa-heartbeat"></i> Santé</h3>
+                <p>Une population en bonne santé est essentielle pour le développement économique et social. Nous soutenons des initiatives qui améliorent l'accès aux soins de santé de qualité pour tous.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-hospital"></i> Organisation de campagnes de vaccination dans les villages reculés</li>
+                    <li><i class="fas fa-ambulance"></i> Don d'équipements médicaux aux centres de santé communautaires</li>
+                    <li><i class="fas fa-hand-holding-water"></i> Construction de puits et de systèmes d'approvisionnement en eau potable</li>
+                    <li><i class="fas fa-pills"></i> Financement de programmes de lutte contre le paludisme et autres maladies</li>
+                </ul>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <div class="mission-vision-card">
+                <h3><i class="fas fa-seedling"></i> Environnement</h3>
+                <p>La protection de l'environnement est une priorité pour assurer un avenir durable. Nous mettons en œuvre des initiatives qui contribuent à la préservation de notre écosystème.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-tree"></i> Plantation d'arbres pour lutter contre la déforestation</li>
+                    <li><i class="fas fa-recycle"></i> Sensibilisation aux pratiques de gestion des déchets</li>
+                    <li><i class="fas fa-solar-panel"></i> Promotion des énergies renouvelables dans les communautés rurales</li>
+                    <li><i class="fas fa-water"></i> Protection des ressources en eau et des écosystèmes aquatiques</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <li></li>
+                        <li>Transport de Marchandises</li>
+                        <li>Transport de Carburants</li>
+                        <li>Transport de produits miniers</li>
+                        <li>Services BTP</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</p>
+                    <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
+                    <p><i class="fas fa-envelope"></i> info@ael.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

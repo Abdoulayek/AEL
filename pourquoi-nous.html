@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pourquoi bosser avec nous ? | AFRIK EXPRESS LOGISTICS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Styles généraux pour la page */
+        .about-section {
+            padding: 60px 0;
+            position: relative;
+        }
+        
+        .about-section:nth-child(even) {
+            background-color: var(--cream-color);
+        }
+        
+        .about-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .section-title {
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .section-title p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        
+        /* Styles pour les cartes d'avantages */
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .advantage-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .advantage-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        }
+        
+        .advantage-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .advantage-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            background-color: var(--cream-color);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .advantage-card:hover i {
+            background-color: var(--primary-color);
+            color: #fff;
+            transform: scale(1.1);
+        }
+        
+        .advantage-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        
+        .advantage-card p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        /* Section d'introduction avec image */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Section divider */
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+            margin: 40px 0;
+            opacity: 0.5;
+        }
+        
+        /* Témoignages */
+        .testimonials {
+            background-color: var(--cream-color);
+            padding: 60px 0;
+            margin-top: 0;
+            position: relative;
+        }
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+        }
+        
+        .testimonials h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .testimonials h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .testimonial-slider {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .testimonial {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+        
+        .testimonial::before {
+            content: '\201C';
+            font-size: 5rem;
+            color: rgba(0, 102, 51, 0.1);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            padding: 0 10px;
+        }
+        
+        .client {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        
+        .client h3 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .client h4 {
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: normal;
+        }
+        
+        /* Hero section */
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/truck.png');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="has-submenu">
+                        <a href="#" class="active">À Propos</a>
+                        <ul class="submenu">
+                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html" class="active">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section" style="margin-top: 90px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos avantages</h2>
+                <p>Les raisons de choisir AFRIK EXPRESS LOGISTICS</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Un partenaire logistique de confiance</h3>
+                    <p>Chez AFRIK EXPRESS LOGISTICS, nous comprenons que la logistique est le pilier de votre activité commerciale. C'est pourquoi nous nous engageons à fournir des services de transport et de logistique fiables, efficaces et adaptés à vos besoins spécifiques.</p>
+                    <p>Notre expertise locale combinée à notre vision internationale nous permet d'offrir des solutions logistiques sur mesure qui répondent aux défis uniques du marché ouest-africain.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/camion.png" alt="AFRIK EXPRESS LOGISTICS - Transport et Logistique">
+                </div>
+            </div>
+            
+            <div class="section-divider"></div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i class="fas fa-truck-moving"></i>
+                    <h3>Expertise Locale</h3>
+                    <p>Notre connaissance approfondie du marché ouest-africain nous permet de naviguer efficacement dans les complexités logistiques régionales, offrant des solutions adaptées aux réalités locales.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sécurité et Fiabilité</h3>
+                    <p>Nous mettons en œuvre des protocoles de sécurité rigoureux et utilisons des technologies de pointe pour assurer la protection et la livraison ponctuelle de vos marchandises.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Service Personnalisé</h3>
+                    <p>Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs besoins spécifiques et développer des solutions logistiques sur mesure qui répondent à leurs exigences uniques.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-globe-africa"></i>
+                    <h3>Couverture Régionale</h3>
+                    <p>Notre réseau logistique s'étend à travers l'Afrique de l'Ouest, permettant des livraisons efficaces et fiables dans toute la région.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Solutions Intégrées</h3>
+                    <p>Nous offrons une gamme complète de services logistiques intégrés, de la collecte à la livraison, en passant par le dédouanement et le stockage, pour une gestion simplifiée de votre chaîne d'approvisionnement.</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Engagement Durable</h3>
+                    <p>Nous nous engageons à adopter des pratiques commerciales durables qui minimisent notre impact environnemental tout en maximisant notre contribution positive aux communautés locales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Ce que nos clients disent</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"AFRIK EXPRESS LOGISTICS a transformé notre chaîne d'approvisionnement en Afrique de l'Ouest. Leur service fiable et leur expertise locale ont été inestimables pour notre expansion dans la région."</p>
+                    <div class="client">
+                        <h3>Jean Dupont</h3>
+                        <h4>Directeur Logistique, Entreprise Internationale</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Nous travaillons avec AFRIK EXPRESS LOGISTICS depuis plus de 5 ans et leur service a toujours été exceptionnel. Leur capacité à résoudre rapidement les problèmes et leur approche personnalisée font d'eux un partenaire logistique de premier choix."</p>
+                    <div class="client">
+                        <h3>Marie Koné</h3>
+                        <h4>PDG, Entreprise Locale</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"La transparence et la communication d'AFRIK EXPRESS LOGISTICS sont incomparables. Nous avons toujours une visibilité complète sur nos expéditions et ils sont toujours disponibles pour répondre à nos questions."</p>
+                    <div class="client">
+                        <h3>Ibrahim Diallo</h3>
+                        <h4>Responsable Supply Chain, Groupe Industriel</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Prêt à collaborer ?</h2>
+                <p>Découvrez comment AFRIK EXPRESS LOGISTICS peut transformer votre logistique</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Discutons de vos besoins logistiques</h3>
+                    <p>Que vous soyez une entreprise internationale cherchant à pénétrer le marché ouest-africain ou une entreprise locale souhaitant optimiser votre chaîne d'approvisionnement, notre équipe d'experts est prête à vous aider.</p>
+                    <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment nous pouvons vous aider à atteindre vos objectifs logistiques.</p>
+                    <a href="contact.html" class="btn" style="background-color: var(--primary-color); color: white; display: inline-block; padding: 12px 30px; border-radius: 5px; text-decoration: none; margin-top: 20px; font-weight: bold; transition: all 0.3s ease;">Contactez-nous</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/camion.png" alt="AFRIK EXPRESS LOGISTICS - Contactez-nous">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- <div class="footer-logo">
+                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                    <p>Votre partenaire logistique de confiance en Afrique de l'Ouest.</p>
+                </div> -->
+                <div class="footer-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nos Services</h3>
+                    <ul>
+                        <li></li>
+                        <li>Transport de Marchandises</li>
+                        <li>Transport de Carburants</li>
+                        <li>Transport de produits miniers</li>
+                        <li>Services BTP</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</p>
+                    <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
+                    <p><i class="fas fa-envelope"></i> info@ael.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
