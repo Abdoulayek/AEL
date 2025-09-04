@@ -12,6 +12,10 @@ const translations = {
         "nav_services": "Services",
         "nav_contact": "Contact",
 
+        "careers_hero_title": "Rejoignez Notre Équipe",
+        "careers_hero_subtitle": "Construisez votre carrière avec un leader de la logistique en Afrique de l'Ouest",
+        "careers_hero_btn": "Voir nos opportunités",
+
         // Page d'accueil
         "hero_title": "Transport et Logistique en Afrique de l'Ouest",
         "hero_subtitle": "Des solutions logistiques fiables pour vos besoins en transport",
@@ -336,6 +340,38 @@ const translations = {
         "nav_services": "Services",
         "nav_contact": "Contact",
 
+        "careers_hero_title": "Join Our Team",
+        "careers_hero_subtitle": "Build your career with a logistics leader in West Africa",
+        "careers_hero_btn": "View our opportunities",
+        "careers_values_title": "Our Values",
+        "careers_values_subtitle": "What defines us and guides us every day",
+        "careers_value1_title": "Excellence",
+        "careers_value1_desc": "We strive for excellence in everything we do, constantly pushing boundaries to deliver exceptional service.",
+        "careers_value2_title": "Integrity",
+        "careers_value2_desc": "We conduct our business with honesty, transparency, and the highest ethical standards.",
+        "careers_value3_title": "Innovation",
+        "careers_value3_desc": "We embrace innovation and creative thinking to solve complex logistics challenges.",
+        "careers_jobs_title": "Available Positions",
+        "careers_jobs_subtitle": "Discover our current opportunities",
+        "careers_job1_title": "Logistics Coordinator",
+        "careers_job1_location": "Abidjan, Ivory Coast",
+        "careers_job_type_fulltime": "Full time",
+        "careers_job1_desc": "We are looking for an experienced Logistics Coordinator to join our team in Abidjan. The ideal candidate will have strong organizational skills and experience in coordinating logistics operations.",
+        "careers_job1_duty1": "Coordinate and monitor the movement of goods and materials",
+        "careers_job1_duty2": "Liaise with customers, suppliers, and internal teams",
+        "careers_job1_duty3": "Ensure compliance with customs regulations and documentation requirements",
+        "careers_job1_duty4": "Track shipments and resolve any logistics issues",
+        "careers_job1_apply": "Apply Now",
+        "careers_job1_posted": "Posted on: August 15, 2025",
+        "careers_job2_title": "Fleet Manager",
+        "careers_job2_location": "Abidjan, Ivory Coast",
+        "careers_job2_desc": "We are looking for a qualified Fleet Manager to oversee our growing fleet of vehicles. The successful candidate will be responsible for maintaining fleet efficiency and compliance with safety standards.",
+        "careers_job2_duty1": "Manage and maintain a fleet of transport vehicles",
+        "careers_job2_duty2": "Plan and coordinate vehicle maintenance and repairs",
+        "careers_job2_duty3": "Ensure compliance with regulations and safety standards",
+        "careers_job2_duty4": "Monitor fuel consumption and implement cost-saving measures",
+        "careers_job2_apply": "Apply Now",
+
         // Page d'accueil
         "hero_title": "Transport and Logistics in West Africa",
         "hero_subtitle": "Reliable logistics solutions for your transportation needs",
@@ -481,6 +517,11 @@ const translations = {
         "form_message": "Message",
         "form_submit": "Send",
         "form_success": "Your message has been sent successfully! We will contact you soon.",
+
+        "careers_values_title": "Our Values",
+        "careers_values_subtitle": "What defines us and guides us every day",
+        "careers_hero_btn": "View our opportunities",
+        
         
         // CTA
         "cta_title": "Ready to collaborate with us?",
