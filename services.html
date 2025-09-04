@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Services - AFRIK EXPRESS LOGISTICS</title>
+    <title>Nos Services - AFRIK EXPRESS & LOGISTICS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-selector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Additional styles for services page */
@@ -174,7 +175,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
             </div>
             <nav>
                 <ul>
@@ -193,6 +194,11 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button class="language-btn" data-lang="fr">FR</button>
+                <span class="language-separator">|</span>
+                <button class="language-btn" data-lang="en">EN</button>
+            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -201,14 +207,14 @@
 
     <section class="services-hero">
         <div class="container">
-            <h1>Nos Services</h1>
+            <h1 data-i18n="services_title">Nos Services</h1>
         </div>
     </section>
 
     <section class="services-intro">
         <div class="container">
-            <h2>Solutions Logistiques Complètes</h2>
-            <p>Chez AFRIK EXPRESS LOGISTICS, nous offrons une gamme complète de services de transport et de logistique adaptés aux besoins spécifiques du marché ivoirien et ouest-africain. Notre flotte moderne et notre équipe expérimentée nous permettent de fournir des solutions fiables, sécurisées et efficaces pour tous vos besoins logistiques.</p>
+            <h2 data-i18n="services_subtitle">Solutions Logistiques Complètes</h2>
+            <p data-i18n="services_intro">Chez AFRIK EXPRESS & LOGISTICS, nous offrons une gamme complète de services de transport et de logistique adaptés aux besoins spécifiques du marché ivoirien et ouest-africain. Notre flotte moderne et notre équipe expérimentée nous permettent de fournir des solutions fiables, sécurisées et efficaces pour tous vos besoins logistiques.</p>
         </div>
     </section>
 
@@ -216,32 +222,32 @@
         <div class="container">
             <div class="service-container">
                 <div class="service-content">
-                    <h2>Transport de produits miniers</h2>
-                    <p>Notre service de transport de produits offre des solutions rapides et fiables pour l'expédition de petits produits et documents à travers la Côte d'Ivoire et l'Afrique de l'Ouest. Que vous soyez une entreprise ou un particulier, nous garantissons une livraison sécurisée et ponctuelle de vos envois.</p>
+                    <h2 data-i18n="service_mining_title">Transport de produits miniers</h2>
+                    <p data-i18n="service_mining_desc">Notre service de transport de produits offre des solutions rapides et fiables pour l'expédition de petits produits et documents à travers la Côte d'Ivoire et l'Afrique de l'Ouest. Que vous soyez une entreprise ou un particulier, nous garantissons une livraison sécurisée et ponctuelle de vos envois.</p>
                     <div class="service-features">
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Livraison express en 24-72h dans les principales villes</p>
+                            <p data-i18n="feature_mining_1">Livraison express en 24-72h dans les principales villes</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Suivi en temps réel de vos colis</p>
+                            <p data-i18n="feature_mining_2">Suivi en temps réel de vos colis</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Assurance et sécurité garanties</p>
+                            <p data-i18n="feature_mining_3">Assurance et sécurité garanties</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Service de ramassage à domicile disponible</p>
+                            <p data-i18n="feature_mining_4">Service de ramassage à domicile disponible</p>
                         </div>
                     </div>
                     <div class="service-cta">
-                        <a href="contact.html" class="btn">Demander un devis</a>
+                        <a href="contact.html" class="btn" data-i18n="service_quote_btn">Demander un devis</a>
                     </div>
                 </div>
                 <div class="service-image">
-                    <img src="images/truck_brand.png" alt="">
+                    <img src="images/truck_brand.png" alt="Transport de produits miniers">
                 </div>
             </div>
         </div>
@@ -251,28 +257,28 @@
         <div class="container">
             <div class="service-container">
                 <div class="service-content">
-                    <h2>Transport de Marchandises</h2>
-                    <p>Notre service de transport de marchandises est conçu pour répondre aux besoins des entreprises de toutes tailles. Avec notre flotte diversifiée de véhicules, nous pouvons transporter tous types de marchandises, des produits alimentaires aux équipements industriels, en garantissant leur sécurité et leur intégrité tout au long du trajet.</p>
+                    <h2 data-i18n="service_goods_title">Transport de Marchandises</h2>
+                    <p data-i18n="service_goods_desc">Notre service de transport de marchandises est conçu pour répondre aux besoins des entreprises de toutes tailles. Avec notre flotte diversifiée de véhicules, nous pouvons transporter tous types de marchandises, des produits alimentaires aux équipements industriels, en garantissant leur sécurité et leur intégrité tout au long du trajet.</p>
                     <div class="service-features">
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Transport national et international</p>
+                            <p data-i18n="feature_goods_1">Transport national et international</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Véhicules adaptés à tous types de marchandises</p>
+                            <p data-i18n="feature_goods_2">Véhicules adaptés à tous types de marchandises</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Gestion des formalités douanières</p>
+                            <p data-i18n="feature_goods_3">Gestion des formalités douanières</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Solutions logistiques personnalisées</p>
+                            <p data-i18n="feature_goods_4">Solutions logistiques personnalisées</p>
                         </div>
                     </div>
                     <div class="service-cta">
-                        <a href="contact.html" class="btn">Demander un devis</a>
+                        <a href="contact.html" class="btn" data-i18n="service_quote_btn">Demander un devis</a>
                     </div>
                 </div>
                 <div class="service-image">
@@ -286,28 +292,28 @@
         <div class="container">
             <div class="service-container">
                 <div class="service-content">
-                    <h2>Transport de Carburants</h2>
-                    <p>Spécialisés dans le transport de produits pétroliers, nous disposons d'une flotte de camions-citernes modernes et conformes aux normes internationales de sécurité. Notre équipe de chauffeurs hautement qualifiés assure la livraison sécurisée de carburants aux stations-service, sites industriels et autres points de distribution.</p>
+                    <h2 data-i18n="service_fuel_title">Transport de Carburants</h2>
+                    <p data-i18n="service_fuel_desc">Spécialisés dans le transport de produits pétroliers, nous disposons d'une flotte de camions-citernes modernes et conformes aux normes internationales de sécurité. Notre équipe de chauffeurs hautement qualifiés assure la livraison sécurisée de carburants aux stations-service, sites industriels et autres points de distribution.</p>
                     <div class="service-features">
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Transport de tous types de carburants</p>
+                            <p data-i18n="feature_fuel_1">Transport de tous types de carburants</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Camions-citernes aux normes ADR</p>
+                            <p data-i18n="feature_fuel_2">Camions-citernes aux normes ADR</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Chauffeurs spécialement formés</p>
+                            <p data-i18n="feature_fuel_3">Chauffeurs spécialement formés</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Système de suivi GPS en temps réel</p>
+                            <p data-i18n="feature_fuel_4">Système de suivi GPS en temps réel</p>
                         </div>
                     </div>
                     <div class="service-cta">
-                        <a href="contact.html" class="btn">Demander un devis</a>
+                        <a href="contact.html" class="btn" data-i18n="service_quote_btn">Demander un devis</a>
                     </div>
                 </div>
                 <div class="service-image">
@@ -321,28 +327,28 @@
         <div class="container">
             <div class="service-container">
                 <div class="service-content">
-                    <h2>Services BTP</h2>
-                    <p>Notre division BTP offre des solutions de transport spécialisées pour l'industrie de la construction. Nous disposons d'équipements adaptés pour le transport de matériaux de construction, d'engins et d'équipements lourds, facilitant ainsi la logistique de vos chantiers.</p>
+                    <h2 data-i18n="service_construction_title">Services BTP</h2>
+                    <p data-i18n="service_construction_desc">Notre division BTP offre des solutions de transport spécialisées pour l'industrie de la construction. Nous disposons d'équipements adaptés pour le transport de matériaux de construction, d'engins et d'équipements lourds, facilitant ainsi la logistique de vos chantiers.</p>
                     <div class="service-features">
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Transport de matériaux de construction</p>
+                            <p data-i18n="feature_construction_1">Transport de matériaux de construction</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Location d'engins de chantier avec chauffeur</p>
+                            <p data-i18n="feature_construction_2">Location d'engins de chantier avec chauffeur</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Transport d'équipements lourds</p>
+                            <p data-i18n="feature_construction_3">Transport d'équipements lourds</p>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <p>Solutions logistiques pour chantiers</p>
+                            <p data-i18n="feature_construction_4">Solutions logistiques pour chantiers</p>
                         </div>
                     </div>
                     <div class="service-cta">
-                        <a href="contact.html" class="btn">Demander un devis</a>
+                        <a href="contact.html" class="btn" data-i18n="service_quote_btn">Demander un devis</a>
                     </div>
                 </div>
                 <div class="service-image">
@@ -354,17 +360,17 @@
 
     <section class="other-services">
         <div class="container">
-            <h2>Services Complémentaires</h2>
+            <h2 data-i18n="other_services_title">Services Complémentaires</h2>
             <div class="other-services-grid">
                 <div class="other-service-card">
                     <i class="fas fa-file-contract"></i>
-                    <h3>Gestion Douanière</h3>
-                    <p>Assistance complète pour les formalités douanières et administratives liées à l'import-export en Côte d'Ivoire et en Afrique de l'Ouest.</p>
+                    <h3 data-i18n="customs_management_title">Gestion Douanière</h3>
+                    <p data-i18n="customs_management_desc">Assistance complète pour les formalités douanières et administratives liées à l'import-export en Côte d'Ivoire et en Afrique de l'Ouest.</p>
                 </div>
                 <div class="other-service-card">
                     <i class="fas fa-route"></i>
-                    <h3>Conseil en Logistique</h3>
-                    <p>Services de conseil pour optimiser votre chaîne d'approvisionnement et réduire vos coûts logistiques.</p>
+                    <h3 data-i18n="logistics_consulting_title">Conseil en Logistique</h3>
+                    <p data-i18n="logistics_consulting_desc">Services de conseil pour optimiser votre chaîne d'approvisionnement et réduire vos coûts logistiques.</p>
                 </div>
             </div>
         </div>
@@ -372,9 +378,9 @@
 
     <section class="cta">
         <div class="container">
-            <h2>Besoin d'une solution logistique sur mesure?</h2>
-            <p>Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques.</p>
-            <a href="contact.html" class="btn">Contactez-nous</a>
+            <h2 data-i18n="cta_title">Besoin d'une solution logistique sur mesure?</h2>
+            <p data-i18n="cta_desc">Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques.</p>
+            <a href="contact.html" class="btn" data-i18n="cta_button">Contactez-nous</a>
         </div>
     </section>
 
@@ -382,30 +388,30 @@
         <div class="container">
             <div class="footer-content">
                 <!-- <div class="footer-logo">
-                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
-                    <p>AFRIK EXPRESS LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
+                    <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
+                    <p>AFRIK EXPRESS & LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
                 </div> -->
                 <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                    <h3 data-i18n="footer_quick_links">Liens Rapides</h3>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="footer_home">Accueil</a></li>
+                        <li><a href="about.html" data-i18n="footer_about">À Propos</a></li>
+                        <li><a href="services.html" data-i18n="footer_services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="footer_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-services">
-                    <h3>Nos Services</h3>
+                    <h3 data-i18n="footer_our_services">Nos Services</h3>
                     <ul>
                         <li></li>
-                        <li>Transport de Marchandises</li>
-                        <li>Transport de Carburants</li>
-                        <li>Services BTP</li>
+                        <li data-i18n="service_goods_title">Transport de Marchandises</li>
+                        <li data-i18n="service_fuel_title">Transport de Carburants</li>
+                        <li data-i18n="service_construction_title">Services BTP</li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</p>
+                    <h3 data-i18n="footer_contact">Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact_address1">Boulevard Félix Houphouët Boigni</span>, <span data-i18n="contact_address2">En face de solibra immeuble la balance au 2 eme étage</span>, Abidjan, Côte d'Ivoire</p>
                     <p><i class="fas fa-phone"></i> +225 XX XX XX XX</p>
                     <p><i class="fas fa-envelope"></i> contact@afrikexpresslogistics.com</p>
                     <div class="social-icons">
@@ -417,11 +423,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+                <p data-i18n="footer_copyright">&copy; 2025 AFRIK EXPRESS & LOGISTICS. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/translations.js"></script>
 </body>
 </html>

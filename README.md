@@ -1,6 +1,6 @@
-# AFRIK EXPRESS LOGISTICS
+# AFRIK EXPRESS & LOGISTICS
 
-Site web professionnel pour AFRIK EXPRESS LOGISTICS, une entreprise de transport et logistique spécialisée dans les services en Afrique.
+Site web professionnel pour AFRIK EXPRESS & LOGISTICS, une entreprise de transport et logistique spécialisée dans les services en Afrique.
 
 ## Fonctionnalités
 - Design responsive

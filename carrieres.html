@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrières | AFRIK EXPRESS LOGISTICS</title>
+    <title>Carrières | AFRIK EXPRESS & LOGISTICS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-selector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         /* Styles spécifiques à la page carrières */
@@ -406,7 +407,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
             </div>
             <nav>
                 <ul>
@@ -425,6 +426,11 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button class="language-btn" data-lang="fr">FR</button>
+                <span class="language-separator">|</span>
+                <button class="language-btn" data-lang="en">EN</button>
+            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -434,9 +440,9 @@
     <!-- Section Hero -->
     <section class="hero-careers">
         <div class="container">
-            <h1>Rejoignez Notre Équipe</h1>
-            <p>Construisez votre carrière avec un leader de la logistique en Afrique de l'Ouest</p>
-            <a href="#postes" class="hero-btn">Voir nos opportunités <i class="fas fa-arrow-right"></i></a>
+            <h1 data-i18n="careers_hero_title">Rejoignez Notre Équipe</h1>
+            <p data-i18n="careers_hero_subtitle">Construisez votre carrière avec un leader de la logistique en Afrique de l'Ouest</p>
+            <a href="#postes" class="hero-btn" data-i18n="careers_hero_btn">Voir nos opportunités <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
 
@@ -444,8 +450,8 @@
     <section class="values-section">
         <div class="container">
             <div class="section-title">
-                <h2>Nos Valeurs</h2>
-                <p>Ce qui nous définit et nous guide au quotidien</p>
+                <h2 data-i18n="careers_values_title">Nos Valeurs</h2>
+                <p data-i18n="careers_values_subtitle">Ce qui nous définit et nous guide au quotidien</p>
             </div>
             
             <div class="values-grid">
@@ -454,8 +460,8 @@
                         <i class="fas fa-handshake"></i>
                     </div>
                     <div class="value-content">
-                        <h3>Intégrité</h3>
-                        <p>Nous agissons avec honnêteté et transparence dans toutes nos interactions professionnelles, en respectant nos engagements envers nos clients et nos employés.</p>
+                        <h3 data-i18n="careers_value1_title">Excellence</h3>
+                        <p data-i18n="careers_value1_desc">Nous visons l'excellence dans tout ce que nous faisons, en repoussant constamment les limites pour offrir un service exceptionnel.</p>
                     </div>
                 </div>
                 
@@ -464,8 +470,8 @@
                         <i class="fas fa-users"></i>
                     </div>
                     <div class="value-content">
-                        <h3>Esprit d'équipe</h3>
-                        <p>Nous croyons en la force du collectif et encourageons la collaboration, le partage des connaissances et le soutien mutuel entre tous les membres de notre équipe.</p>
+                        <h3 data-i18n="careers_value2_title">Intégrité</h3>
+                        <p data-i18n="careers_value2_desc">Nous menons nos activités avec honnêtété, transparence et selon les normes éthiques les plus élevées.</p>
                     </div>
                 </div>
                 
@@ -474,8 +480,8 @@
                         <i class="fas fa-rocket"></i>
                     </div>
                     <div class="value-content">
-                        <h3>Innovation</h3>
-                        <p>Nous cherchons constamment à améliorer nos services et nos processus, en adoptant de nouvelles technologies et en encourageant la créativité et les idées novatrices.</p>
+                        <h3 data-i18n="careers_value3_title">Innovation</h3>
+                        <p data-i18n="careers_value3_desc">Nous embrassons l'innovation et la pensée créative pour résoudre des défis logistiques complexes.</p>
                     </div>
                 </div>
             </div>
@@ -486,86 +492,86 @@
     <section id="postes" class="job-section">
         <div class="container">
             <div class="section-title">
-                <h2>Postes à Pourvoir</h2>
-                <p>Découvrez nos opportunités actuelles</p>
+                <h2 data-i18n="careers_jobs_title">Postes à Pourvoir</h2>
+                <p data-i18n="careers_jobs_subtitle">Découvrez nos opportunités actuelles</p>
             </div>
             
             <div class="job-listings">
                 <div class="job-card">
                     <div class="job-header">
                         <div class="job-title">
-                            <h3>Responsable des Opérations Logistiques</h3>
+                            <h3 data-i18n="careers_job1_title">Coordinateur Logistique</h3>
                             <div class="job-location">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</span>
+                                <span data-i18n="careers_job1_location">Abidjan, Côte d'Ivoire</span>
                             </div>
                         </div>
-                        <div class="job-type">Temps plein</div>
+                        <div class="job-type" data-i18n="careers_job_type_fulltime">Temps plein</div>
                     </div>
                     <div class="job-description">
-                        <p>Nous recherchons un Responsable des Opérations Logistiques expérimenté pour superviser nos activités logistiques quotidiennes, optimiser nos processus opérationnels et assurer la satisfaction de nos clients.</p>
+                        <p data-i18n="careers_job1_desc">Nous recherchons un Coordinateur Logistique expérimenté pour rejoindre notre équipe à Abidjan. Le candidat idéal aura de solides compétences organisationnelles et une expérience dans la coordination des opérations logistiques.</p>
                         <ul>
-                            <li>Gérer et coordonner les opérations logistiques quotidiennes</li>
-                            <li>Superviser l'équipe opérationnelle et assurer le respect des délais</li>
-                            <li>Optimiser les processus logistiques pour améliorer l'efficacité</li>
-                            <li>Assurer la liaison avec les clients et résoudre les problèmes</li>
+                            <li data-i18n="careers_job1_duty1">Coordonner et surveiller le mouvement des marchandises et des matériaux</li>
+                            <li data-i18n="careers_job1_duty2">Assurer la liaison avec les clients, les fournisseurs et les équipes internes</li>
+                            <li data-i18n="careers_job1_duty3">Assurer la conformité avec les réglementations douanières et les exigences de documentation</li>
+                            <li data-i18n="careers_job1_duty4">Suivre les expéditions et résoudre tout problème logistique</li>
                         </ul>
                     </div>
                     <div class="job-footer">
-                        <a href="#candidature" class="job-btn">Postuler maintenant</a>
-                        <div class="job-date">Publié le 15 juillet 2023</div>
+                        <a href="#candidature" class="job-btn" data-i18n="careers_job1_apply">Postuler Maintenant</a>
+                        <div class="job-date" data-i18n="careers_job1_posted">Posté le: 15 août 2025</div>
                     </div>
                 </div>
                 
                 <div class="job-card">
                     <div class="job-header">
                         <div class="job-title">
-                            <h3>Chauffeur de Poids Lourds</h3>
+                            <h3 data-i18n="careers_job2_title">Gestionnaire de Flotte</h3>
                             <div class="job-location">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</span>
+                                <span data-i18n="careers_job2_location">Abidjan, Côte d'Ivoire</span>
                             </div>
                         </div>
-                        <div class="job-type">Temps plein</div>
+                        <div class="job-type" data-i18n="careers_job_type_fulltime">Temps plein</div>
                     </div>
                     <div class="job-description">
-                        <p>Nous recherchons des chauffeurs de poids lourds expérimentés pour assurer le transport de marchandises à travers l'Afrique de l'Ouest.</p>
+                        <p data-i18n="careers_job2_desc">Nous recherchons un Gestionnaire de Flotte qualifié pour superviser notre flotte croissante de véhicules. Le candidat retenu sera responsable du maintien de l'efficacité de la flotte et du respect des normes de sécurité.</p>
                         <ul>
-                            <li>Conduire des camions sur de longues distances en toute sécurité</li>
-                            <li>Assurer la livraison des marchandises dans les délais impartis</li>
-                            <li>Effectuer des contrôles de sécurité réguliers sur les véhicules</li>
-                            <li>Maintenir des registres précis des livraisons et des kilomètres parcourus</li>
+                            <li data-i18n="careers_job2_duty1">Gérer et entretenir une flotte de véhicules de transport</li>
+                            <li data-i18n="careers_job2_duty2">Planifier et coordonner l'entretien et les réparations des véhicules</li>
+                            <li data-i18n="careers_job2_duty3">Assurer la conformité avec les règlements et normes de sécurité</li>
+                            <li data-i18n="careers_job2_duty4">Surveiller la consommation de carburant et mettre en œuvre des mesures d'économie</li>
                         </ul>
                     </div>
                     <div class="job-footer">
-                        <a href="#candidature" class="job-btn">Postuler maintenant</a>
-                        <div class="job-date">Publié le 10 juillet 2023</div>
+                        <a href="#candidature" class="job-btn" data-i18n="careers_job2_apply">Postuler Maintenant</a>
+                        <div class="job-date" data-i18n="careers_job2_posted">Posté le: 10 juillet 2023</div>
                     </div>
                 </div>
                 
                 <div class="job-card">
                     <div class="job-header">
                         <div class="job-title">
-                            <h3>Responsable Commercial</h3>
+                            <h3 data-i18n="careers_job3_title">Représentant Service Clientèle</h3>
                             <div class="job-location">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <span>Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</span>
+                                <span data-i18n="careers_job3_location">Abidjan, Côte d'Ivoire</span>
                             </div>
                         </div>
-                        <div class="job-type">Temps plein</div>
+                        <div class="job-type" data-i18n="careers_job_type_fulltime">Temps plein</div>
                     </div>
                     <div class="job-description">
-                        <p>Nous recherchons un Responsable Commercial dynamique pour développer notre portefeuille clients et identifier de nouvelles opportunités commerciales.</p>
+                        <p data-i18n="careers_job3_desc">Nous recherchons un Représentant Service Clientèle compétent pour rejoindre notre équipe. Le candidat idéal aura d'excellentes compétences en communication et une forte orientation client.</p>
                         <ul>
-                            <li>Prospecter et acquérir de nouveaux clients</li>
-                            <li>Maintenir et développer les relations avec les clients existants</li>
-                            <li>Élaborer des propositions commerciales adaptées aux besoins des clients</li>
-                            <li>Atteindre et dépasser les objectifs de vente fixés</li>
+                            <li data-i18n="careers_job3_duty1">Gérer les demandes des clients et fournir des informations sur nos services</li>
+                            <li data-i18n="careers_job3_duty2">Traiter les commandes des clients et suivre les expéditions</li>
+                            <li data-i18n="careers_job3_duty3">Résoudre les plaintes et les problèmes des clients de manière rapide</li>
+                            <li data-i18n="careers_job3_duty4">Maintenir les dossiers clients et mettre à jour les informations si nécessaire</li>
                         </ul>
                     </div>
                     <div class="job-footer">
-                        <a href="#candidature" class="job-btn">Postuler maintenant</a>
-                        <div class="job-date">Publié le 5 juillet 2023</div>
+                        <a href="#candidature" class="job-btn" data-i18n="careers_job3_apply">Postuler Maintenant</a>
+                        <div class="job-date" data-i18n="careers_job3_posted">Posté le: 5 juillet 2023</div>
                     </div>
                 </div>
             </div>
@@ -576,8 +582,8 @@
     <section class="benefits-section">
         <div class="container">
             <div class="section-title">
-                <h2>Avantages de Travailler Avec Nous</h2>
-                <p>Ce que nous offrons à nos collaborateurs</p>
+                <h2 data-i18n="careers_benefits_title">Avantages</h2>
+                <p data-i18n="careers_benefits_subtitle">Ce que nous offrons</p>
             </div>
             
             <div class="benefits-grid">
@@ -586,8 +592,8 @@
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Développement Professionnel</h3>
-                        <p>Nous investissons dans la formation et le développement de nos employés pour les aider à atteindre leur plein potentiel.</p>
+                        <h3 data-i18n="careers_benefit1_title">Salaire Compétitif</h3>
+                        <p data-i18n="careers_benefit1_desc">Nous offrons des packages de rémunération compétitifs qui reconnaissent vos compétences et votre expérience.</p>
                     </div>
                 </div>
                 
@@ -596,8 +602,8 @@
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Opportunités de Carrière</h3>
-                        <p>Nous encourageons la promotion interne et offrons des opportunités d'avancement au sein de l'entreprise.</p>
+                        <h3 data-i18n="careers_benefit2_title">Assurance Santé</h3>
+                        <p data-i18n="careers_benefit2_desc">Couverture d'assurance santé complète pour vous et votre famille.</p>
                     </div>
                 </div>
                 
@@ -606,8 +612,8 @@
                         <i class="fas fa-hands-helping"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Culture Collaborative</h3>
-                        <p>Nous favorisons un environnement de travail collaboratif où chaque voix est entendue et valorisée.</p>
+                        <h3 data-i18n="careers_benefit3_title">Développement Professionnel</h3>
+                        <p data-i18n="careers_benefit3_desc">Opportunités de formation et d'avancement de carrière au sein de l'entreprise.</p>
                     </div>
                 </div>
                 
@@ -616,8 +622,8 @@
                         <i class="fas fa-balance-scale"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Équilibre Travail-Vie</h3>
-                        <p>Nous reconnaissons l'importance d'un bon équilibre entre vie professionnelle et vie personnelle.</p>
+                        <h3 data-i18n="careers_benefit4_title">Équilibre Travail-Vie</h3>
+                        <p data-i18n="careers_benefit4_desc">Arrangements de travail flexibles pour vous aider à maintenir un équilibre sain entre vie professionnelle et vie privée.</p>
                     </div>
                 </div>
                 
@@ -626,8 +632,8 @@
                         <i class="fas fa-medal"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Reconnaissance</h3>
-                        <p>Nous reconnaissons et récompensons les performances exceptionnelles et les contributions à notre succès.</p>
+                        <h3 data-i18n="careers_benefit5_title">Lieu de Travail Inclusif</h3>
+                        <p data-i18n="careers_benefit5_desc">Un environnement de travail diversifié et inclusif où les contributions de chacun sont valorisées.</p>
                     </div>
                 </div>
                 
@@ -636,8 +642,8 @@
                         <i class="fas fa-globe-africa"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Impact Régional</h3>
-                        <p>Rejoignez-nous pour contribuer au développement économique de l'Afrique de l'Ouest et faire une différence positive.</p>
+                        <h3 data-i18n="careers_benefit6_title">Team Building</h3>
+                        <p data-i18n="careers_benefit6_desc">Activités régulières de team building et événements sociaux pour favoriser une culture d'entreprise forte.</p>
                     </div>
                 </div>
             </div>
@@ -648,63 +654,63 @@
     <section id="candidature" class="apply-section">
         <div class="container">
             <div class="section-title">
-                <h2>Postulez Maintenant</h2>
-                <p>Envoyez-nous votre candidature</p>
+                <h2 data-i18n="careers_apply_title">Postulez Maintenant</h2>
+                <p data-i18n="careers_apply_subtitle">Envoyez-nous votre candidature</p>
             </div>
             
             <div class="apply-container">
                 <form class="apply-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="nom">Nom</label>
+                            <label for="nom" data-i18n="careers_form_lastname">Nom</label>
                             <input type="text" id="nom" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="prenom">Prénom</label>
+                            <label for="prenom" data-i18n="careers_form_firstname">Prénom</label>
                             <input type="text" id="prenom" class="form-control" required>
                         </div>
                     </div>
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email" data-i18n="careers_form_email">Email</label>
                             <input type="email" id="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="telephone">Téléphone</label>
+                            <label for="telephone" data-i18n="careers_form_phone">Téléphone</label>
                             <input type="tel" id="telephone" class="form-control" required>
                         </div>
                     </div>
                     
                     <div class="form-group">
-                        <label for="poste">Poste souhaité</label>
+                        <label for="poste" data-i18n="careers_form_position">Poste souhaité</label>
                         <select id="poste" class="form-control" required>
-                            <option value="">Sélectionnez un poste</option>
-                            <option value="responsable-operations">Responsable des Opérations Logistiques</option>
-                            <option value="chauffeur">Chauffeur de Poids Lourds</option>
-                            <option value="responsable-commercial">Responsable Commercial</option>
-                            <option value="autre">Autre / Candidature spontanée</option>
+                            <option value="" data-i18n="careers_form_select_position">Sélectionnez un poste</option>
+                            <option value="logistics-coordinator" data-i18n="careers_form_logistics_coordinator">Coordinateur Logistique</option>
+                            <option value="fleet-manager" data-i18n="careers_form_fleet_manager">Gestionnaire de Flotte</option>
+                            <option value="customer-service" data-i18n="careers_form_customer_service">Représentant du Service Client</option>
+                            <option value="autre" data-i18n="careers_form_other">Autre</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
-                        <label for="message">Message / Lettre de motivation</label>
+                        <label for="message" data-i18n="careers_form_message">Message / Lettre de motivation</label>
                         <textarea id="message" class="form-control" rows="5" required></textarea>
                     </div>
                     
                     <div class="form-group">
-                        <label>CV</label>
+                        <label data-i18n="careers_form_cv">CV</label>
                         <div class="file-upload">
                             <label for="cv" class="file-upload-label">
                                 <i class="fas fa-cloud-upload-alt"></i>
-                                <span>Cliquez pour télécharger votre CV</span>
+                                <span data-i18n="careers_form_upload_cv">Cliquez pour télécharger votre CV</span>
                             </label>
                             <input type="file" id="cv" accept=".pdf,.doc,.docx" required>
                         </div>
                     </div>
                     
                     <div class="form-group" style="text-align: center; margin-top: 30px;">
-                        <button type="submit" class="submit-btn">Envoyer ma candidature</button>
+                        <button type="submit" class="submit-btn" data-i18n="careers_form_submit">Envoyer ma candidature</button>
                     </div>
                 </form>
             </div>
@@ -716,27 +722,27 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                    <h3 data-i18n="footer_quick_links">Liens Rapides</h3>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="qui-sommes-nous.html">À Propos</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="footer_home">Accueil</a></li>
+                        <li><a href="qui-sommes-nous.html" data-i18n="footer_about">À Propos</a></li>
+                        <li><a href="services.html" data-i18n="footer_services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="footer_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-services">
-                    <h3>Nos Services</h3>
+                    <h3 data-i18n="footer_our_services">Nos Services</h3>
                     <ul>
                         <li></li>
-                        <li>Transport de Marchandises</li>
-                        <li>Transport de Carburants</li>
-                        <li>Transport de produits miniers</li>
-                        <li>Services BTP</li>
+                        <li data-i18n="footer_service_goods">Transport de Marchandises</li>
+                        <li data-i18n="footer_service_fuel">Transport de Carburants</li>
+                        <li data-i18n="footer_service_mining">Transport de produits miniers</li>
+                        <li data-i18n="footer_service_construction">Services BTP</li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</p>
+                    <h3 data-i18n="footer_contact_title">Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</span></p>
                     <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
                     <p><i class="fas fa-envelope"></i> info@ael.com</p>
                     <div class="social-icons">
@@ -748,11 +754,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+                <p data-i18n="footer_copyright">&copy; 2023 AFRIK EXPRESS & LOGISTICS. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

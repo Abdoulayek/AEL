@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFRIK EXPRESS LOGISTICS - Transport et Logistique en Côte d'Ivoire</title>
+    <title>AFRIK EXPRESS & LOGISTICS - Transport et Logistique en Côte d'Ivoire</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-selector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="index.html" class="active" data-i18n="nav_home">Accueil</a></li>
                     <li class="has-submenu">
-                        <a href="#">À Propos</a>
+                        <a href="#" data-i18n="nav_about">À Propos</a>
                         <ul class="submenu">
-                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
-                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
-                            <li><a href="carrieres.html">Carrières</a></li>
-                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                            <li><a href="qui-sommes-nous.html" data-i18n="nav_who_we_are">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html" data-i18n="nav_why_us">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html" data-i18n="nav_team">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html" data-i18n="nav_careers">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html" data-i18n="nav_charity">Oeuvre caritative</a></li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button class="language-btn active" data-lang="fr">FR</button>
+                <div class="language-divider"></div>
+                <button class="language-btn" data-lang="en">EN</button>
+            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -39,39 +45,39 @@
     <section class="hero">
         <div class="container">
             <h1>AFRIK EXPRESS & LOGISTICS</h1>
-            <h2>Ensemble, vers l'Afrique de demain.<h2>
-            <!-- <p>Votre partenaire de confiance pour le transport de produits, marchandises, carburants et BTP en Côte d'Ivoire</p> -->
-            <a href="contact.html" class="btn">Demandez un devis</a>
+            <h2 data-i18n="hero_tagline">Ensemble, vers l'Afrique de demain.</h2>
+            <!-- <p data-i18n="hero_description">Votre partenaire de confiance pour le transport de produits, marchandises, carburants et BTP en Côte d'Ivoire</p> -->
+            <a href="contact.html" class="btn" data-i18n="hero_cta">Demandez un devis</a>
         </div>
     </section>
 
     <section class="services-preview">
         <div class="container">
-            <h2>Nos Services</h2>
+            <h2 data-i18n="services_title">Nos Services</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-box"></i>
-                    <h3>Transport de produits miniers</h3>
-                    <p>Transport sécurisé et fiable de produits miniers (cuivre, bauxite, manganese, etc.) avec des équipements spécialisés et une expertise en matière de conformité réglementaire.</p>
+                    <h3 data-i18n="service_mining_title">Transport de produits miniers</h3>
+                    <p data-i18n="service_mining_desc">Transport sécurisé et fiable de produits miniers (cuivre, bauxite, manganese, etc.) avec des équipements spécialisés et une expertise en matière de conformité réglementaire.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-truck"></i>
-                    <h3>Transport de Marchandises</h3>
-                    <p>Solutions logistiques complètes pour le transport de vos marchandises avec suivi en temps réel.</p>
+                    <h3 data-i18n="service_goods_title">Transport de Marchandises</h3>
+                    <p data-i18n="service_goods_desc">Solutions logistiques complètes pour le transport de vos marchandises avec suivi en temps réel.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-gas-pump"></i>
-                    <h3>Transport de Carburants</h3>
-                    <p>Transport sécurisé de carburants avec une flotte moderne et des chauffeurs qualifiés.</p>
+                    <h3 data-i18n="service_fuel_title">Transport de Carburants</h3>
+                    <p data-i18n="service_fuel_desc">Transport sécurisé de carburants avec une flotte moderne et des chauffeurs qualifiés.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-hard-hat"></i>
-                    <h3>Services BTP</h3>
-                    <p>Transport de matériaux et équipements pour vos chantiers de construction.</p>
+                    <h3 data-i18n="service_construction_title">Services BTP</h3>
+                    <p data-i18n="service_construction_desc">Transport de matériaux et équipements pour vos chantiers de construction.</p>
                 </div>
             </div>
             <div class="services-cta">
-                <a href="services.html" class="btn">Découvrir tous nos services</a>
+                <a href="services.html" class="btn" data-i18n="services_cta">Découvrir tous nos services</a>
             </div>
         </div>
     </section>
@@ -80,10 +86,10 @@
         <div class="container">
             <div class="about-content">
                 <h2>AFRIK EXPRESS & LOGISTICS</h2>
-                <h3>Ensemble, vers l'Afrique de demain.</h3>
-                <p>Fondée avec la vision de contribuer au développement économique de la Côte d'Ivoire et de l'Afrique, AFRIK EXPRESS LOGISTICS s'engage à fournir des services de transport et de logistique de qualité supérieure.</p>
-                <p>Notre flotte moderne et notre équipe expérimentée nous permettent de répondre efficacement à tous vos besoins logistiques.</p>
-                <a href="about.html" class="btn">En savoir plus</a>
+                <h3 data-i18n="about_tagline">Ensemble, vers l'Afrique de demain.</h3>
+                <p data-i18n="about_desc_1">Fondée avec la vision de contribuer au développement économique de la Côte d'Ivoire et de l'Afrique, AFRIK EXPRESS & LOGISTICS s'engage à fournir des services de transport et de logistique de qualité supérieure.</p>
+                <p data-i18n="about_desc_2">Notre flotte moderne et notre équipe expérimentée nous permettent de répondre efficacement à tous vos besoins logistiques.</p>
+                <a href="about.html" class="btn" data-i18n="about_cta">En savoir plus</a>
             </div>
             <div class="about-image">
                 <img src="images/truck_brand.png" alt="Camion AEL">
@@ -95,9 +101,9 @@
 
     <section class="cta">
         <div class="container">
-            <h2>Prêt à optimiser votre logistique?</h2>
-            <p>Contactez-nous aujourd'hui pour discuter de vos besoins en transport et logistique.</p>
-            <a href="contact.html" class="btn">Demander un devis</a>
+            <h2 data-i18n="cta_title">Prêt à optimiser votre logistique?</h2>
+            <p data-i18n="cta_desc">Contactez-nous aujourd'hui pour discuter de vos besoins en transport et logistique.</p>
+            <a href="contact.html" class="btn" data-i18n="cta_button">Demander un devis</a>
         </div>
     </section>
 
@@ -105,29 +111,29 @@
         <div class="container">
             <div class="footer-content">
                 <!-- <div class="footer-logo">
-                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
-                    <p>AFRIK EXPRESS LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
+                    <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
+                    <p>AFRIK EXPRESS & LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
                 </div> -->
                 <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                    <h3 data-i18n="footer_quick_links">Liens Rapides</h3>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">À Propos</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-services">
-                    <h3>Nos Services</h3>
+                    <h3 data-i18n="footer_our_services">Nos Services</h3>
                     <ul>
-                        <li>Transport de Produits Miniers</li>
-                        <li>Transport de Marchandises</li>
-                        <li>Transport de Carburants</li>
-                        <li>Services BTP</li>
+                        <li data-i18n="service_mining_title">Transport de Produits Miniers</li>
+                        <li data-i18n="service_goods_title">Transport de Marchandises</li>
+                        <li data-i18n="service_fuel_title">Transport de Carburants</li>
+                        <li data-i18n="service_construction_title">Services BTP</li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>Contact</h3>
+                    <h3 data-i18n="footer_contact">Contact</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni en face de solibra immeuble la balance au 2 eme étage</p>
                     <p><i class="fas fa-map-marker-alt"></i> Bp 1327</p>
                     <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
@@ -142,11 +148,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+                <p data-i18n="footer_copyright">&copy; 2025 AFRIK EXPRESS & LOGISTICS. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

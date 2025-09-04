@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qui sommes-nous ? | AFRIK EXPRESS LOGISTICS</title>
+    <title>Qui sommes-nous ? | AFRIK EXPRESS & LOGISTICS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-selector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         /* Styles pour la page Qui sommes-nous */
@@ -213,25 +214,30 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
                     <li class="has-submenu">
-                        <a href="#" class="active">À Propos</a>
+                        <a href="#" class="active" data-i18n="nav_about">À Propos</a>
                         <ul class="submenu">
-                            <li><a href="qui-sommes-nous.html" class="active">Qui sommes-nous ?</a></li>
-                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
-                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
-                            <li><a href="carrieres.html">Carrières</a></li>
-                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                            <li><a href="qui-sommes-nous.html" class="active" data-i18n="nav_who_we_are">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html" data-i18n="nav_why_us">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html" data-i18n="nav_team">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html" data-i18n="nav_careers">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html" data-i18n="nav_charity">Oeuvre caritative</a></li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button class="language-btn active" data-lang="fr">FR</button>
+                <div class="language-divider"></div>
+                <button class="language-btn" data-lang="en">EN</button>
+            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -240,44 +246,44 @@
 
     <section class="about-hero">
         <div class="container">
-            <h1>Qui sommes-nous ?</h1>
+            <h1 data-i18n="about_title">Qui sommes-nous ?</h1>
         </div>
     </section>
 
     <section class="about-section">
         <div class="container">
             <div class="section-title">
-                <h2>Qui sommes-nous ?</h2>
-                <p>Découvrez AFRIK EXPRESS LOGISTICS</p>
+                <h2 data-i18n="about_title">Qui sommes-nous ?</h2>
+                <p data-i18n="about_subtitle">Découvrez AFRIK EXPRESS & LOGISTICS</p>
             </div>
             
             <div class="about-content">
                 <div class="about-text">
-                    <p>AFRIK EXPRESS LOGISTICS est une entreprise de transport et de logistique basée en Côte d'Ivoire, spécialisée dans le , marchandises, carburants et services BTP à travers l'Afrique de l'Ouest.</p>
-                    <p>Fondée avec la vision de contribuer au développement économique de l'Afrique, notre entreprise s'engage à fournir des services logistiques fiables, efficaces et de haute qualité qui répondent aux besoins spécifiques de nos clients.</p>
-                    <p>Avec une flotte moderne et une équipe de professionnels expérimentés, nous offrons des solutions logistiques complètes adaptées aux défis uniques du marché africain. Notre engagement envers l'excellence et l'innovation nous positionne comme un partenaire de confiance pour toutes vos exigences en matière de transport et de logistique.</p>
+                    <p data-i18n="about_text1">AFRIK EXPRESS & LOGISTICS est une entreprise de transport et de logistique basée en Côte d'Ivoire, spécialisée dans le transport de marchandises, carburants et services BTP à travers l'Afrique de l'Ouest.</p>
+                    <p data-i18n="about_text2">Fondée avec la vision de contribuer au développement économique de l'Afrique, notre entreprise s'engage à fournir des services logistiques fiables, efficaces et de haute qualité qui répondent aux besoins spécifiques de nos clients.</p>
+                    <p data-i18n="about_text3">Avec une flotte moderne et une équipe de professionnels expérimentés, nous offrons des solutions logistiques complètes adaptées aux défis uniques du marché africain. Notre engagement envers l'excellence et l'innovation nous positionne comme un partenaire de confiance pour toutes vos exigences en matière de transport et de logistique.</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/camion.png" alt="AFRIK EXPRESS LOGISTICS - Transport et Logistique">
+                    <img src="images/camion.png" alt="AFRIK EXPRESS & LOGISTICS - Transport et Logistique">
                 </div>
             </div>
             
             <div class="stats-container">
                 <div class="stat-item">
                     <div class="stat-number">10+</div>
-                    <div class="stat-label">Années d'expérience</div>
+                    <div class="stat-label" data-i18n="stat_experience">Années d'expérience</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">5</div>
-                    <div class="stat-label">Pays desservis</div>
+                    <div class="stat-label" data-i18n="stat_countries">Pays desservis</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">500+</div>
-                    <div class="stat-label">Clients satisfaits</div>
+                    <div class="stat-label" data-i18n="stat_clients">Clients satisfaits</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">50+</div>
-                    <div class="stat-label">Véhicules modernes</div>
+                    <div class="stat-label" data-i18n="stat_vehicles">Véhicules modernes</div>
                 </div>
             </div>
         </div>
@@ -327,11 +333,11 @@
             
             <div class="about-content">
                 <div class="about-image">
-                    <img src="images/truck_brand.png" alt="AFRIK EXPRESS LOGISTICS - Notre Vision">
+                    <img src="images/truck_brand.png" alt="AFRIK EXPRESS & LOGISTICS - Notre Vision">
                 </div>
                 <div class="about-text">
                     <h3>Notre engagement pour l'Afrique</h3>
-                    <p>Chez AFRIK EXPRESS LOGISTICS, nous croyons fermement au potentiel de l'Afrique de l'Ouest. Notre vision va au-delà des simples services logistiques - nous voulons être un acteur clé du développement économique de la région.</p>
+                    <p>Chez AFRIK EXPRESS & LOGISTICS, nous croyons fermement au potentiel de l'Afrique de l'Ouest. Notre vision va au-delà des simples services logistiques - nous voulons être un acteur clé du développement économique de la région.</p>
                     <p>En investissant dans des technologies modernes, en formant notre personnel local et en adoptant des pratiques commerciales durables, nous contribuons à bâtir un avenir meilleur pour les communautés que nous servons.</p>
                 </div>
             </div>
@@ -342,7 +348,7 @@
         <div class="container">
             <div class="footer-content">
                 <!-- <div class="footer-logo">
-                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                    <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
                     <p>Votre partenaire logistique de confiance en Afrique de l'Ouest.</p>
                 </div> -->
                 <div class="footer-links">
@@ -378,11 +384,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+                <p>&copy; 2023 AFRIK EXPRESS & LOGISTICS. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

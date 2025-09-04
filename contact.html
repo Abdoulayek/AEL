@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - AFRIK EXPRESS LOGISTICS</title>
+    <title>Contact - AFRIK EXPRESS & LOGISTICS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-selector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* Additional styles for contact page */
@@ -187,25 +188,30 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
                     <li class="has-submenu">
-                        <a href="#">À Propos</a>
+                        <a href="#" data-i18n="nav_about">À Propos</a>
                         <ul class="submenu">
-                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
-                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
-                            <li><a href="carrieres.html">Carrières</a></li>
-                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                            <li><a href="qui-sommes-nous.html" data-i18n="nav_who_we_are">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html" data-i18n="nav_why_us">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html" data-i18n="nav_team">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html" data-i18n="nav_careers">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html" data-i18n="nav_charity">Oeuvre caritative</a></li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button class="language-btn active" data-lang="fr">FR</button>
+                <div class="language-divider"></div>
+                <button class="language-btn" data-lang="en">EN</button>
+            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -214,7 +220,7 @@
 
     <section class="contact-hero">
         <div class="container">
-            <h1>Contactez-Nous</h1>
+            <h1 data-i18n="contact_title">Contactez-Nous</h1>
         </div>
     </section>
 
@@ -222,29 +228,29 @@
         <div class="container">
             <div class="contact-container">
                 <div class="contact-info">
-                    <h2>Restons en Contact</h2>
-                    <p>Vous avez des questions sur nos services ou vous souhaitez obtenir un devis personnalisé? N'hésitez pas à nous contacter. Notre équipe est à votre disposition pour répondre à toutes vos demandes.</p>
+                    <h2 data-i18n="contact_subtitle">Restons en Contact</h2>
+                    <p data-i18n="contact_intro">Vous avez des questions sur nos services ou vous souhaitez obtenir un devis personnalisé? N'hésitez pas à nous contacter. Notre équipe est à votre disposition pour répondre à toutes vos demandes.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="contact-text">
-                                <h3>Siège Social</h3>
-                                <p>Boulevard Félix Houphouët Boigni</p>
-                                <p>En face de solibra immeuble la balance au 2 eme étage</p>
-                                <p>Bp 1327</p>
+                                <h3 data-i18n="contact_office">Siège Social</h3>
+                                <p data-i18n="contact_address1">Boulevard Félix Houphouët Boigni</p>
+                                <p data-i18n="contact_address2">En face de solibra immeuble la balance au 2 eme étage</p>
+                                <p data-i18n="contact_address3">Bp 1327</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone-alt"></i>
                             <div class="contact-text">
-                                <h3>Téléphone</h3>
+                                <h3 data-i18n="contact_phone_title">Téléphone</h3>
                                 <p>+225 07 48 786 249</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div class="contact-text">
-                                <h3>Email</h3>
+                                <h3 data-i18n="contact_email_title">Email</h3>
                                 <p>contact@ael.com</p>
                                 <p>info@ael.com</p>
                             </div>
@@ -252,57 +258,57 @@
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
                             <div class="contact-text">
-                                <h3>Heures d'Ouverture</h3>
-                                <p>Lundi - Vendredi: 8h00 - 18h00</p>
-                                <p>Samedi: 8h00 - 13h00</p>
-                                <p>Dimanche: Fermé</p>
+                                <h3 data-i18n="contact_hours_title">Heures d'Ouverture</h3>
+                                <p data-i18n="contact_hours_weekdays">Lundi - Vendredi: 8h00 - 18h00</p>
+                                <p data-i18n="contact_hours_saturday">Samedi: 8h00 - 13h00</p>
+                                <p data-i18n="contact_hours_sunday">Dimanche: Fermé</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h2>Envoyez-nous un Message</h2>
+                    <h2 data-i18n="contact_form_title">Envoyez-nous un Message</h2>
                     <form id="contact-form">
                         <div class="form-group">
-                            <label for="company">Nom de l'entreprise*</label>
+                            <label for="company" data-i18n="contact_company">Nom de l'entreprise*</label>
                             <input type="text" id="company" name="company" required>
                         </div>
                         <div class="form-group">
-                            <label for="lastname">Nom*</label>
+                            <label for="lastname" data-i18n="contact_lastname">Nom*</label>
                             <input type="text" id="lastname" name="lastname" required>
                         </div>
                         <div class="form-group">
-                            <label for="firstname">Prénom*</label>
+                            <label for="firstname" data-i18n="contact_firstname">Prénom*</label>
                             <input type="text" id="firstname" name="firstname" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email*</label>
+                            <label for="email" data-i18n="contact_email">Email*</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Téléphone*</label>
+                            <label for="phone" data-i18n="contact_phone">Téléphone*</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Concerné*</label>
+                            <label for="service" data-i18n="contact_service">Service Concerné*</label>
                             <select id="service" name="service" required>
-                                <option value="">Sélectionnez un service</option>
-                                <option value="miniers">Transport de produits miniers</option>
-                                <option value="marchandises">Transport de Marchandises</option>
-                                <option value="carburants">Transport de Carburants</option>
-                                <option value="btp">Services BTP</option>
-                                <option value="autre">Autre</option>
+                                <option value="" data-i18n="contact_select_service">Sélectionnez un service</option>
+                                <option value="miniers" data-i18n="service_mining_title">Transport de produits miniers</option>
+                                <option value="marchandises" data-i18n="service_goods_title">Transport de Marchandises</option>
+                                <option value="carburants" data-i18n="service_fuel_title">Transport de Carburants</option>
+                                <option value="btp" data-i18n="service_construction_title">Services BTP</option>
+                                <option value="autre" data-i18n="contact_other">Autre</option>
                             </select>
                         </div>
                         <div class="form-group" id="quantity-container">
-                            <label for="quantity">Quantité (tonnes ou litres selon le service)*</label>
+                            <label for="quantity" data-i18n="contact_quantity">Quantité (tonnes ou litres selon le service)*</label>
                             <input type="number" id="quantity" name="quantity" min="1" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
+                            <label for="message" data-i18n="contact_message">Message</label>
                             <textarea id="message" name="message"></textarea>
                         </div>
-                        <button type="submit" class="form-btn">Envoyer le Message</button>
+                        <button type="submit" class="form-btn" data-i18n="contact_send">Envoyer le Message</button>
                     </form>
                 </div>
             </div>
@@ -311,7 +317,7 @@
 
     <section class="map-section">
         <div class="container">
-            <h2>Notre Emplacement</h2>
+            <h2 data-i18n="contact_location">Notre Emplacement</h2>
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127103.37148911194!2d-4.0833007!3d5.3484716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ea5311959121%3A0x3fe70ddce19221a6!2sYopougon%2C%20Abidjan%2C%20C%C3%B4te%20d&#39;Ivoire!5e0!3m2!1sfr!2sfr!4v1662123456789!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -320,9 +326,9 @@
 
     <section class="cta">
         <div class="container">
-            <h2>Prêt à collaborer avec nous?</h2>
-            <p>AFRIK EXPRESS LOGISTICS, ensemble, nous faisons avancer l'Afrique.</p>
-            <a href="#contact-form" class="btn">Contactez-nous maintenant</a>
+            <h2 data-i18n="cta_title">Prêt à collaborer avec nous?</h2>
+            <p data-i18n="cta_text">AFRIK EXPRESS & LOGISTICS, ensemble, nous faisons avancer l'Afrique.</p>
+            <a href="#contact-form" class="btn" data-i18n="cta_button">Contactez-nous maintenant</a>
         </div>
     </section>
 
@@ -330,31 +336,31 @@
         <div class="container">
             <div class="footer-content">
                 <!-- <div class="footer-logo">
-                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
-                    <p>AFRIK EXPRESS LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
+                    <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
+                    <p>AFRIK EXPRESS & LOGISTICS<br>Ensemble, nous faisons avancer l'Afrique.</p>
                 </div> -->
                 <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                    <h3 data-i18n="footer_quick_links">Liens Rapides</h3>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">À Propos</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-services">
-                    <h3>Nos Services</h3>
+                    <h3 data-i18n="footer_our_services">Nos Services</h3>
                     <ul>
                         <li></li>
-                        <li>Transport de Marchandises</li>
-                        <li>Transport de Carburants</li>
-                        <li>Services BTP</li>
+                        <li data-i18n="service_goods_title">Transport de Marchandises</li>
+                        <li data-i18n="service_fuel_title">Transport de Carburants</li>
+                        <li data-i18n="service_construction_title">Services BTP</li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni en face de solibra immeuble la balance au 2 eme étage</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Bp 1327</p>
+                    <h3 data-i18n="footer_contact">Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact_address1">Boulevard Félix Houphouët Boigni</span> <span data-i18n="contact_address2">en face de solibra immeuble la balance au 2 eme étage</span></p>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact_address3">Bp 1327</span></p>
                     <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
                     <p><i class="fas fa-envelope"></i> contact@ael.com</p>
                     <p><i class="fas fa-envelope"></i> info@ael.com</p>
@@ -367,11 +373,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+                <p data-i18n="footer_copyright">&copy; 2025 AFRIK EXPRESS & LOGISTICS. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

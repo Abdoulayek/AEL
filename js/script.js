@@ -1,6 +1,47 @@
-// JavaScript for AFRIK EXPRESS LOGISTICS website
+// JavaScript for AFRIK EXPRESS & LOGISTICS website
+
+// Fonction pour changer la langue
+function changeLanguage(lang) {
+    // Stocker la préférence de langue
+    localStorage.setItem('language', lang);
+    
+    // Mettre à jour tous les éléments avec attribut data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
+        }
+    });
+
+    // Mettre à jour les attributs placeholder
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+            element.placeholder = translations[lang][key];
+        }
+    });
+
+    // Mettre à jour le texte du bouton de sélection de langue actif
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        }
+    });
+}
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialiser la langue au chargement de la page
+    const language = localStorage.getItem('language') || 'fr';
+    changeLanguage(language);
+    
+    // Ajouter les écouteurs d'événements pour les boutons de langue
+    document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            changeLanguage(lang);
+        });
+    });
     // Mobile menu toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu');
     const nav = document.querySelector('nav');
@@ -109,7 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Show success message (in a real scenario, this would submit the form)
                 const successMessage = document.createElement('div');
                 successMessage.className = 'success-message';
-                successMessage.textContent = 'Votre message a été envoyé avec succès! Nous vous contacterons bientôt.';
+                const language = localStorage.getItem('language') || 'fr';
+                successMessage.textContent = translations[language]['form_success'];
                 
                 const formContainer = contactForm.parentElement;
                 formContainer.appendChild(successMessage);

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rencontrez l'équipe | AFRIK EXPRESS LOGISTICS</title>
+    <title>Rencontrez l'équipe | AFRIK EXPRESS & LOGISTICS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-selector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         /* Styles généraux pour la page */
@@ -277,25 +278,30 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
                     <li class="has-submenu">
-                        <a href="#" class="active">À Propos</a>
+                        <a href="#" class="active" data-i18n="nav_about">À Propos</a>
                         <ul class="submenu">
-                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
-                            <li><a href="equipe.html" class="active">Rencontrez l'équipe</a></li>
-                            <li><a href="carrieres.html">Carrières</a></li>
-                            <li><a href="oeuvre-caritative.html">Oeuvre caritative</a></li>
+                            <li><a href="qui-sommes-nous.html" data-i18n="nav_who_we_are">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html" data-i18n="nav_why_us">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html" class="active" data-i18n="nav_team">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html" data-i18n="nav_careers">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html" data-i18n="nav_charity">Oeuvre caritative</a></li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button class="language-btn active" data-lang="fr">FR</button>
+                <div class="language-divider"></div>
+                <button class="language-btn" data-lang="en">EN</button>
+            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -305,15 +311,15 @@
     <section class="about-section" style="margin-top: 90px;">
         <div class="container">
             <div class="section-title">
-                <h2>Notre équipe de direction</h2>
-                <p>Les experts qui dirigent AFRIK EXPRESS LOGISTICS</p>
+                <h2 data-i18n="team_leadership_title">Notre équipe de direction</h2>
+                <p data-i18n="team_leadership_subtitle">Les experts qui dirigent AFRIK EXPRESS & LOGISTICS</p>
             </div>
             
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Une équipe d'experts à votre service</h3>
-                    <p>Notre équipe de direction est composée de professionnels expérimentés et passionnés, dédiés à l'excellence opérationnelle et à la satisfaction client.</p>
-                    <p>Avec une expertise combinée de plusieurs décennies dans le secteur de la logistique et du transport en Afrique de l'Ouest, notre équipe possède les connaissances et les compétences nécessaires pour relever les défis logistiques les plus complexes.</p>
+                    <h3 data-i18n="team_experts_title">Une équipe d'experts à votre service</h3>
+                    <p data-i18n="team_experts_p1">Notre équipe de direction est composée de professionnels expérimentés et passionnés, dédiés à l'excellence opérationnelle et à la satisfaction client.</p>
+                    <p data-i18n="team_experts_p2">Avec une expertise combinée de plusieurs décennies dans le secteur de la logistique et du transport en Afrique de l'Ouest, notre équipe possède les connaissances et les compétences nécessaires pour relever les défis logistiques les plus complexes.</p>
                 </div>
             </div>
             
@@ -323,8 +329,8 @@
                 <div class="team-member">
                     <img src="" alt="Bey Touré">
                     <div class="team-info">
-                        <h3>Bey Touré</h3>
-                        <p>Directeur Général</p>
+                        <h3 data-i18n="team_member1_name">Bey Touré</h3>
+                        <p data-i18n="team_member1_position">Directeur Général</p>
                         <div class="team-social">
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -336,8 +342,8 @@
                 <div class="team-member">
                     <img src="" alt="Fatou Sow">
                     <div class="team-info">
-                        <h3>Fatou Sow</h3>
-                        <p>Directrice des Opérations</p>
+                        <h3 data-i18n="team_member2_name">Fatou Sow</h3>
+                        <p data-i18n="team_member2_position">Directrice des Opérations</p>
                         <div class="team-social">
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -349,8 +355,8 @@
                 <div class="team-member">
                     <img src="" alt="Kofi Mensah">
                     <div class="team-info">
-                        <h3>Kofi Mensah</h3>
-                        <p>Directeur Financier</p>
+                        <h3 data-i18n="team_member3_name">Kofi Mensah</h3>
+                        <p data-i18n="team_member3_position">Directeur Financier</p>
                         <div class="team-social">
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -362,8 +368,8 @@
                 <div class="team-member">
                     <img src="" alt="Aminata Touré">
                     <div class="team-info">
-                        <h3>Aminata Touré</h3>
-                        <p>Directrice Commerciale</p>
+                        <h3 data-i18n="team_member4_name">Aminata Touré</h3>
+                        <p data-i18n="team_member4_position">Directrice Commerciale</p>
                         <div class="team-social">
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -378,43 +384,43 @@
     <section class="culture-section">
         <div class="container">
             <div class="section-title">
-                <h2>Notre culture d'entreprise</h2>
-                <p>Les valeurs qui nous définissent</p>
+                <h2 data-i18n="team_culture_title">Notre culture d'entreprise</h2>
+                <p data-i18n="team_culture_subtitle">Les valeurs qui nous définissent</p>
             </div>
             
-            <p>Chez AFRIK EXPRESS LOGISTICS, nous cultivons un environnement de travail dynamique, inclusif et collaboratif où chaque membre de l'équipe est valorisé et encouragé à atteindre son plein potentiel.</p>
+            <p data-i18n="team_culture_intro">Chez AFRIK EXPRESS & LOGISTICS, nous cultivons un environnement de travail dynamique, inclusif et collaboratif où chaque membre de l'équipe est valorisé et encouragé à atteindre son plein potentiel.</p>
             
             <div class="culture-card">
-                <h3>Nos valeurs fondamentales</h3>
+                <h3 data-i18n="team_values_title">Nos valeurs fondamentales</h3>
                 <ul class="culture-list">
                     <li>
-                        <strong>Excellence</strong>
-                        Nous nous efforçons d'exceller dans tout ce que nous faisons, en visant constamment à dépasser les attentes de nos clients.
+                        <strong data-i18n="team_value1_title">Excellence</strong>
+                        <span data-i18n="team_value1_desc">Nous nous efforçons d'exceller dans tout ce que nous faisons, en visant constamment à dépasser les attentes de nos clients.</span>
                     </li>
                     <li>
-                        <strong>Intégrité</strong>
-                        Nous menons nos activités avec honnêtété, transparence et éthique, en respectant nos engagements envers nos clients, nos employés et nos partenaires.
+                        <strong data-i18n="team_value2_title">Intégrité</strong>
+                        <span data-i18n="team_value2_desc">Nous menons nos activités avec honnêtété, transparence et éthique, en respectant nos engagements envers nos clients, nos employés et nos partenaires.</span>
                     </li>
                     <li>
-                        <strong>Innovation</strong>
-                        Nous encourageons la créativité et l'innovation, en cherchant continuellement à améliorer nos services et nos processus.
+                        <strong data-i18n="team_value3_title">Innovation</strong>
+                        <span data-i18n="team_value3_desc">Nous encourageons la créativité et l'innovation, en cherchant continuellement à améliorer nos services et nos processus.</span>
                     </li>
                     <li>
-                        <strong>Collaboration</strong>
-                        Nous croyons au pouvoir du travail d'équipe et de la collaboration pour atteindre des objectifs communs.
+                        <strong data-i18n="team_value4_title">Collaboration</strong>
+                        <span data-i18n="team_value4_desc">Nous croyons au pouvoir du travail d'équipe et de la collaboration pour atteindre des objectifs communs.</span>
                     </li>
                     <li>
-                        <strong>Responsabilité sociale</strong>
-                        Nous nous engageons à contribuer positivement aux communautés dans lesquelles nous opérons et à minimiser notre impact environnemental.
+                        <strong data-i18n="team_value5_title">Responsabilité sociale</strong>
+                        <span data-i18n="team_value5_desc">Nous nous engageons à contribuer positivement aux communautés dans lesquelles nous opérons et à minimiser notre impact environnemental.</span>
                     </li>
                 </ul>
             </div>
             
             <div class="about-content" style="margin-top: 40px;">
                 <div class="about-text">
-                    <h3>Rejoignez notre équipe</h3>
-                    <p>Nous sommes toujours à la recherche de talents passionnés et motivés pour rejoindre notre équipe. Si vous partagez nos valeurs et souhaitez contribuer à notre mission, nous vous invitons à consulter nos opportunités de carrière.</p>
-                    <a href="carrieres.html" class="btn" style="background-color: var(--primary-color); color: white; display: inline-block; padding: 12px 30px; border-radius: 5px; text-decoration: none; margin-top: 20px; font-weight: bold; transition: all 0.3s ease;">Voir nos opportunités</a>
+                    <h3 data-i18n="team_join_title">Rejoignez notre équipe</h3>
+                    <p data-i18n="team_join_desc">Nous sommes toujours à la recherche de talents passionnés et motivés pour rejoindre notre équipe. Si vous partagez nos valeurs et souhaitez contribuer à notre mission, nous vous invitons à consulter nos opportunités de carrière.</p>
+                    <a href="carrieres.html" class="btn" style="background-color: var(--primary-color); color: white; display: inline-block; padding: 12px 30px; border-radius: 5px; text-decoration: none; margin-top: 20px; font-weight: bold; transition: all 0.3s ease;" data-i18n="team_join_button">Voir nos opportunités</a>
                 </div>
             </div>
         </div>
@@ -424,31 +430,31 @@
         <div class="container">
             <div class="footer-content">
                 <!-- <div class="footer-logo">
-                    <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                    <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
                     <p>Votre partenaire logistique de confiance en Afrique de l'Ouest.</p>
                 </div> -->
                 <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                    <h3 data-i18n="footer_quick_links">Liens Rapides</h3>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">À Propos</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-services">
-                    <h3>Nos Services</h3>
+                    <h3 data-i18n="footer_our_services">Nos Services</h3>
                     <ul>
                         <li></li>
-                        <li>Transport de Marchandises</li>
-                        <li>Transport de Carburants</li>
-                        <li>Transport de produits miniers</li>
-                        <li>Services BTP</li>
+                        <li data-i18n="service_goods">Transport de Marchandises</li>
+                        <li data-i18n="service_fuel">Transport de Carburants</li>
+                        <li data-i18n="service_mining">Transport de produits miniers</li>
+                        <li data-i18n="service_construction">Services BTP</li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</p>
+                    <h3 data-i18n="footer_contact">Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact_address">Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</span></p>
                     <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
                     <p><i class="fas fa-envelope"></i> info@ael.com</p>
                     <div class="social-icons">
@@ -460,11 +466,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+                <p data-i18n="footer_copyright">&copy; 2023 AFRIK EXPRESS & LOGISTICS. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

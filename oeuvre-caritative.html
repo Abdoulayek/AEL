@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Œuvres Caritatives | AFRIK EXPRESS LOGISTICS</title>
+    <title>Œuvres Caritatives | AFRIK EXPRESS & LOGISTICS</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/language-selector.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         /* Styles pour la page Œuvres Caritatives */
@@ -214,25 +215,30 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="AFRIK EXPRESS LOGISTICS">
+                <img src="images/logo.png" alt="AFRIK EXPRESS & LOGISTICS">
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
                     <li class="has-submenu">
-                        <a href="#" class="active">À Propos</a>
+                        <a href="#" class="active" data-i18n="nav_about">À Propos</a>
                         <ul class="submenu">
-                            <li><a href="qui-sommes-nous.html">Qui sommes-nous ?</a></li>
-                            <li><a href="pourquoi-nous.html">Pourquoi bosser avec nous ?</a></li>
-                            <li><a href="equipe.html">Rencontrez l'équipe</a></li>
-                            <li><a href="carrieres.html">Carrières</a></li>
-                            <li><a href="oeuvre-caritative.html" class="active">Oeuvre caritative</a></li>
+                            <li><a href="qui-sommes-nous.html" data-i18n="nav_who_we_are">Qui sommes-nous ?</a></li>
+                            <li><a href="pourquoi-nous.html" data-i18n="nav_why_us">Pourquoi bosser avec nous ?</a></li>
+                            <li><a href="equipe.html" data-i18n="nav_team">Rencontrez l'équipe</a></li>
+                            <li><a href="carrieres.html" data-i18n="nav_careers">Carrières</a></li>
+                            <li><a href="oeuvre-caritative.html" class="active" data-i18n="nav_charity">Oeuvre caritative</a></li>
                         </ul>
                     </li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-selector">
+                <button class="language-btn active" data-lang="fr">FR</button>
+                <div class="language-divider"></div>
+                <button class="language-btn" data-lang="en">EN</button>
+            </div>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
             </div>
@@ -241,44 +247,44 @@
 
     <section class="about-hero">
         <div class="container">
-            <h1>Nos Œuvres Caritatives</h1>
+            <h1 data-i18n="charity_title">Nos Œuvres Caritatives</h1>
         </div>
     </section>
 
     <section class="about-section">
         <div class="container">
             <div class="section-title">
-                <h2>Notre Engagement Social</h2>
-                <p>Contribuer au développement des communautés</p>
+                <h2 data-i18n="charity_commitment_title">Notre Engagement Social</h2>
+                <p data-i18n="charity_commitment_subtitle">Contribuer au développement des communautés</p>
             </div>
             
             <div class="about-content">
                 <div class="about-text">
-                    <p>Chez AFRIK EXPRESS LOGISTICS, nous croyons fermement que notre succès est intrinsèquement lié au bien-être des communautés dans lesquelles nous opérons. C'est pourquoi nous avons fait de l'engagement social une partie intégrante de notre identité d'entreprise.</p>
-                    <p>Notre programme d'œuvres caritatives vise à apporter un soutien concret aux communautés locales à travers l'Afrique de l'Ouest, en mettant l'accent sur l'éducation, la santé, l'environnement et le développement économique.</p>
-                    <p>Nous ne considérons pas ces initiatives comme de simples actions de responsabilité sociale d'entreprise, mais comme un véritable investissement dans l'avenir de notre continent. En contribuant au développement des communautés locales, nous participons à la construction d'une Afrique plus forte et plus prospère.</p>
+                    <p data-i18n="charity_commitment_p1">Chez AFRIK EXPRESS & LOGISTICS, nous croyons fermement que notre succès est intrinsèquement lié au bien-être des communautés dans lesquelles nous opérons. C'est pourquoi nous avons fait de l'engagement social une partie intégrante de notre identité d'entreprise.</p>
+                    <p data-i18n="charity_commitment_p2">Notre programme d'œuvres caritatives vise à apporter un soutien concret aux communautés locales à travers l'Afrique de l'Ouest, en mettant l'accent sur l'éducation, la santé, l'environnement et le développement économique.</p>
+                    <p data-i18n="charity_commitment_p3">Nous ne considérons pas ces initiatives comme de simples actions de responsabilité sociale d'entreprise, mais comme un véritable investissement dans l'avenir de notre continent. En contribuant au développement des communautés locales, nous participons à la construction d'une Afrique plus forte et plus prospère.</p>
                 </div>
                 <div class="about-image">
-                    <img src="images/camion.png" alt="AFRIK EXPRESS LOGISTICS - Engagement Social">
+                    <img src="images/camion.png" alt="AFRIK EXPRESS & LOGISTICS - Engagement Social">
                 </div>
             </div>
             
             <div class="stats-container">
                 <div class="stat-item">
                     <div class="stat-number">15+</div>
-                    <div class="stat-label">Projets réalisés</div>
+                    <div class="stat-label" data-i18n="charity_stat_projects">Projets réalisés</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">5000+</div>
-                    <div class="stat-label">Bénéficiaires</div>
+                    <div class="stat-label" data-i18n="charity_stat_beneficiaries">Bénéficiaires</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">3</div>
-                    <div class="stat-label">Pays d'intervention</div>
+                    <div class="stat-label" data-i18n="charity_stat_countries">Pays d'intervention</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">10%</div>
-                    <div class="stat-label">De nos bénéfices</div>
+                    <div class="stat-label" data-i18n="charity_stat_profits">De nos bénéfices</div>
                 </div>
             </div>
         </div>
@@ -287,43 +293,43 @@
     <section class="about-section">
         <div class="container">
             <div class="section-title">
-                <h2>Nos Domaines d'Intervention</h2>
+                <h2 data-i18n="charity_domains_title">Nos Domaines d'Intervention</h2>
             </div>
             
             <div class="mission-vision-card">
-                <h3><i class="fas fa-graduation-cap"></i> Éducation</h3>
-                <p>L'éducation est la clé du développement durable. Nous investissons dans des programmes éducatifs qui offrent aux jeunes les compétences nécessaires pour réussir dans un monde en constante évolution.</p>
+                <h3><i class="fas fa-graduation-cap"></i> <span data-i18n="charity_education_title">Éducation</span></h3>
+                <p data-i18n="charity_education_desc">L'éducation est la clé du développement durable. Nous investissons dans des programmes éducatifs qui offrent aux jeunes les compétences nécessaires pour réussir dans un monde en constante évolution.</p>
                 <ul class="feature-list">
-                    <li><i class="fas fa-check-circle"></i> Construction et rénovation d'écoles dans les zones rurales</li>
-                    <li><i class="fas fa-book"></i> Distribution de fournitures scolaires aux élèves défavorisés</li>
-                    <li><i class="fas fa-laptop"></i> Mise en place de salles informatiques dans les établissements scolaires</li>
-                    <li><i class="fas fa-user-graduate"></i> Octroi de bourses d'études aux étudiants méritants</li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="charity_education_item1">Construction et rénovation d'écoles dans les zones rurales</span></li>
+                    <li><i class="fas fa-book"></i> <span data-i18n="charity_education_item2">Distribution de fournitures scolaires aux élèves défavorisés</span></li>
+                    <li><i class="fas fa-laptop"></i> <span data-i18n="charity_education_item3">Mise en place de salles informatiques dans les établissements scolaires</span></li>
+                    <li><i class="fas fa-user-graduate"></i> <span data-i18n="charity_education_item4">Octroi de bourses d'études aux étudiants méritants</span></li>
                 </ul>
             </div>
             
             <div class="section-divider"></div>
             
             <div class="mission-vision-card">
-                <h3><i class="fas fa-heartbeat"></i> Santé</h3>
-                <p>Une population en bonne santé est essentielle pour le développement économique et social. Nous soutenons des initiatives qui améliorent l'accès aux soins de santé de qualité pour tous.</p>
+                <h3><i class="fas fa-heartbeat"></i> <span data-i18n="charity_health_title">Santé</span></h3>
+                <p data-i18n="charity_health_desc">Une population en bonne santé est essentielle pour le développement économique et social. Nous soutenons des initiatives qui améliorent l'accès aux soins de santé de qualité pour tous.</p>
                 <ul class="feature-list">
-                    <li><i class="fas fa-hospital"></i> Organisation de campagnes de vaccination dans les villages reculés</li>
-                    <li><i class="fas fa-ambulance"></i> Don d'équipements médicaux aux centres de santé communautaires</li>
-                    <li><i class="fas fa-hand-holding-water"></i> Construction de puits et de systèmes d'approvisionnement en eau potable</li>
-                    <li><i class="fas fa-pills"></i> Financement de programmes de lutte contre le paludisme et autres maladies</li>
+                    <li><i class="fas fa-hospital"></i> <span data-i18n="charity_health_item1">Organisation de campagnes de vaccination dans les villages reculés</span></li>
+                    <li><i class="fas fa-ambulance"></i> <span data-i18n="charity_health_item2">Don d'équipements médicaux aux centres de santé communautaires</span></li>
+                    <li><i class="fas fa-hand-holding-water"></i> <span data-i18n="charity_health_item3">Construction de puits et de systèmes d'approvisionnement en eau potable</span></li>
+                    <li><i class="fas fa-pills"></i> <span data-i18n="charity_health_item4">Financement de programmes de lutte contre le paludisme et autres maladies</span></li>
                 </ul>
             </div>
             
             <div class="section-divider"></div>
             
             <div class="mission-vision-card">
-                <h3><i class="fas fa-seedling"></i> Environnement</h3>
-                <p>La protection de l'environnement est une priorité pour assurer un avenir durable. Nous mettons en œuvre des initiatives qui contribuent à la préservation de notre écosystème.</p>
+                <h3><i class="fas fa-seedling"></i> <span data-i18n="charity_environment_title">Environnement</span></h3>
+                <p data-i18n="charity_environment_desc">La protection de l'environnement est une priorité pour assurer un avenir durable. Nous mettons en œuvre des initiatives qui contribuent à la préservation de notre écosystème.</p>
                 <ul class="feature-list">
-                    <li><i class="fas fa-tree"></i> Plantation d'arbres pour lutter contre la déforestation</li>
-                    <li><i class="fas fa-recycle"></i> Sensibilisation aux pratiques de gestion des déchets</li>
-                    <li><i class="fas fa-solar-panel"></i> Promotion des énergies renouvelables dans les communautés rurales</li>
-                    <li><i class="fas fa-water"></i> Protection des ressources en eau et des écosystèmes aquatiques</li>
+                    <li><i class="fas fa-tree"></i> <span data-i18n="charity_environment_item1">Plantation d'arbres pour lutter contre la déforestation</span></li>
+                    <li><i class="fas fa-recycle"></i> <span data-i18n="charity_environment_item2">Sensibilisation aux pratiques de gestion des déchets</span></li>
+                    <li><i class="fas fa-solar-panel"></i> <span data-i18n="charity_environment_item3">Promotion des énergies renouvelables dans les communautés rurales</span></li>
+                    <li><i class="fas fa-water"></i> <span data-i18n="charity_environment_item4">Protection des ressources en eau et des écosystèmes aquatiques</span></li>
                 </ul>
             </div>
         </div>
@@ -334,26 +340,25 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-links">
-                    <h3>Liens Rapides</h3>
+                    <h3 data-i18n="footer_quick_links">Liens Rapides</h3>
                     <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Accueil</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">À Propos</a></li>
+                        <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+                        <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-services">
-                    <h3>Nos Services</h3>
+                    <h3 data-i18n="footer_our_services">Nos Services</h3>
                     <ul>
-                        <li></li>
-                        <li>Transport de Marchandises</li>
-                        <li>Transport de Carburants</li>
-                        <li>Transport de produits miniers</li>
-                        <li>Services BTP</li>
+                        <li data-i18n="service_goods_title">Transport de Marchandises</li>
+                        <li data-i18n="service_fuel_title">Transport de Carburants</li>
+                        <li data-i18n="service_mining_title">Transport de produits miniers</li>
+                        <li data-i18n="service_construction_title">Services BTP</li>
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h3>Contact</h3>
+                    <h3 data-i18n="footer_contact">Contact</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire</p>
                     <p><i class="fas fa-phone"></i> +225 07 48 786 249</p>
                     <p><i class="fas fa-envelope"></i> info@ael.com</p>
@@ -366,11 +371,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 AFRIK EXPRESS LOGISTICS. Tous droits réservés.</p>
+                <p data-i18n="footer_copyright">&copy; 2023 AFRIK EXPRESS & LOGISTICS. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
