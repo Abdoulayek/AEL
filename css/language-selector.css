@@ -42,7 +42,14 @@
 @media (max-width: 768px) {
     .language-selector {
         position: absolute;
-        top: 20px;
+        top: 50%;
         right: 70px;
+        transform: translateY(-50%);
+        z-index: 1001;
+    }
+    
+    .language-btn {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 4px 6px;
     }
 }
