@@ -429,14 +429,13 @@
                     submitBtn.disabled = true;
                     submitBtn.innerHTML = 'Envoi en cours...';
                     
-                    // Envoyer l'email via l'API Brevo
-                    fetch('https://api.brevo.com/v3/smtp/email', {
+                    // Envoyer les données au webhook n8n
+                    fetch('https://dataventuren8n.acserveur.com/webhook-test/ael-contact-form', {
                         method: 'POST',
                         headers: {
-                            'Content-Type': 'application/json',
-                            'api-key': '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'
+                            'Content-Type': 'application/json'
                         },
-                        body: JSON.stringify(emailData)
+                        body: JSON.stringify(formValues)
                     })
                     .then(response => {
                         if (!response.ok) {
@@ -447,14 +446,19 @@
                         return response.json();
                     })
                     .then(data => {
-                        // Succès
-                        form.innerHTML = `
-                            <div class="success-message">
-                                <i class="fas fa-check-circle"></i>
-                                <h3>Message envoyé avec succès!</h3>
-                                <p>Nous vous répondrons dans les plus brefs délais.</p>
-                            </div>
-                        `;
+                        // Vérifier si la réponse contient messageId (succès)
+                        if (data && data[0] && data[0].messageId) {
+                            // Succès
+                            form.innerHTML = `
+                                <div class="success-message">
+                                    <i class="fas fa-check-circle"></i>
+                                    <h3>Message envoyé avec succès!</h3>
+                                    <p>Nous vous répondrons dans les plus brefs délais.</p>
+                                </div>
+                            `;
+                        } else {
+                            throw new Error('Réponse invalide du serveur');
+                        }
                     })
                     .catch(error => {
                         // Afficher l'erreur complète

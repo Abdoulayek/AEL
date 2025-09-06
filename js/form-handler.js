@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Fonction d'envoi d'email via Brevo
+    // Fonction d'envoi d'email via webhook n8n
     function sendEmail(subject, content, senderEmail, senderName, formType) {
         // S'assurer que senderName et senderEmail sont définis
         senderName = senderName || 'Contact AEL';
@@ -111,39 +111,23 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.innerHTML = 'Envoi en cours...';
         submitBtn.disabled = true;
         
-        // Configuration de la requête
-        const url = 'https://api.brevo.com/v3/smtp/email';
-        const apiKey = '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';
-        
-        // Format de requête simplifié sans template
-        const data = {
-            sender: {
-                name: 'Site Web AEL',
-                email: 'contact@ael-ci.com'
-            },
-            to: [
-                {
-                    email: 'abdoulayekante863@gmail.com',
-                    name: 'AEL Contact'
-                }
-            ],
+        // Préparer les données pour le webhook
+        const formData = {
             subject: subject,
-            htmlContent: `<!DOCTYPE html><html><body>${content.replace(/\n/g, '<br>')}</body></html>`,
-            textContent: content,
-            replyTo: {
-                email: senderEmail,
-                name: senderName
-            }
-            // Suppression de templateId et autres paramètres qui causent des erreurs
+            content: content,
+            email: senderEmail,
+            firstname: senderName.split(' ')[0] || '',
+            lastname: senderName.split(' ')[1] || '',
+            formType: formType
         };
         
-        fetch(url, {
+        // Envoyer au webhook n8n
+        fetch('https://dataventuren8n.acserveur.com/webhook-test/ael-contact-form', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'api-key': apiKey
+                'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify(formData)
         })
         .then(response => {
             if (!response.ok) {
@@ -152,15 +136,20 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(data => {
-            // Afficher un message de succès
-            formElement.innerHTML = `
-                <div class="success-message">
-                    <i class="fas fa-check-circle"></i>
-                    <h3>Message envoyé avec succès!</h3>
-                    <p>Nous vous répondrons dans les plus brefs délais.</p>
-                </div>
-            `;
-            console.log('Email envoyé avec succès:', data);
+            // Vérifier si la réponse contient messageId (succès)
+            if (data && data[0] && data[0].messageId) {
+                // Afficher un message de succès
+                formElement.innerHTML = `
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message envoyé avec succès!</h3>
+                        <p>Nous vous répondrons dans les plus brefs délais.</p>
+                    </div>
+                `;
+                console.log('Email envoyé avec succès:', data);
+            } else {
+                throw new Error('Réponse invalide du serveur');
+            }
         })
         .catch(error => {
             console.error('Erreur lors de l\'envoi de l\'email:', error);
