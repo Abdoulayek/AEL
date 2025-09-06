@@ -377,12 +377,39 @@ nav ul li a.active::after {
 
 /* CTA Section */
 .cta {
-    padding: 80px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/camion.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/camion.png');
     background-size: cover;
     background-position: center;
     color: var(--accent-color);
     text-align: center;
+    padding: 80px 0;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-text {
+    margin-bottom: 30px;
+}
+
+.cta-text .company-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.cta-text .tagline {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 25px;
+    color: #f5f5f5;
 }
 
 .cta h2 {

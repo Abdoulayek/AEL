@@ -19,7 +19,7 @@ const translations = {
         // Page d'accueil
         "hero_title": "Transport et Logistique en Afrique de l'Ouest",
         "hero_subtitle": "Des solutions logistiques fiables pour vos besoins en transport",
-        "hero_tagline": "Ensemble, vers l'Afrique de demain.",
+        "hero_tagline": "Ensemble, vers l'Afrique de demain !",
         "hero_description": "Votre partenaire de confiance pour le transport de produits, marchandises, carburants et BTP en Côte d'Ivoire",
         "hero_cta": "Demandez un devis",
         "hero_contact": "Contactez-nous",
@@ -82,7 +82,7 @@ const translations = {
         "logistics_consulting_desc": "Services de conseil pour optimiser votre chaîne d'approvisionnement et réduire vos coûts logistiques.",
         
         // À propos section
-        "about_tagline": "Ensemble, vers l'Afrique de demain.",
+        "about_tagline": "Ensemble, vers l'Afrique de demain !",
         "about_desc_1": "Fondée avec la vision de contribuer au développement économique de la Côte d'Ivoire et de l'Afrique, AFRIK EXPRESS & LOGISTICS s'engage à fournir des services de transport et de logistique de qualité supérieure.",
         "about_desc_2": "Notre flotte moderne et notre équipe expérimentée nous permettent de répondre efficacement à tous vos besoins logistiques.",
         "about_cta": "En savoir plus",
@@ -163,7 +163,7 @@ const translations = {
         
         // CTA
         "cta_title": "Prêt à collaborer avec nous?",
-        "cta_text": "AFRIK EXPRESS & LOGISTICS, ensemble, nous faisons avancer l'Afrique.",
+        "cta_text": "AFRIK EXPRESS & LOGISTICS",
         "cta_button": "Contactez-nous maintenant",
         
         // Footer
@@ -321,7 +321,7 @@ const translations = {
         "footer_home": "Accueil",
         "footer_about": "À Propos",
         "footer_services": "Services",
-        "cta_text_2": "Ensemble vers l'Afrique de demain.",
+        "cta_text_2": "Ensemble vers l'Afrique de demain !",
         "footer_contact": "Contact",
         "footer_contact_title": "Contact",
         "footer_address": "Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, BP 1327, Abidjan, Côte d'Ivoire",
@@ -348,7 +348,7 @@ const translations = {
         "careers_values_title": "Our Values",
         "careers_values_subtitle": "What defines us and guides us every day",
         "careers_value1_title": "Excellence",
-        "cta_text_2" : "Together, towards tomorrow's Africa.",
+        "cta_text_2" : "Together, towards tomorrow's Africa !",
         "careers_value1_desc": "We strive for excellence in everything we do, constantly pushing boundaries to deliver exceptional service.",
         "careers_value2_title": "Integrity",
         "careers_value2_desc": "We conduct our business with honesty, transparency, and the highest ethical standards.",
@@ -382,7 +382,7 @@ const translations = {
         // Page d'accueil
         "hero_title": "Transport and Logistics in West Africa",
         "hero_subtitle": "Reliable logistics solutions for your transportation needs",
-        "hero_tagline": "Together, towards tomorrow's Africa.",
+        "hero_tagline": "Together, towards tomorrow's Africa !",
         "hero_description": "Your trusted partner for the transport of products, goods, fuels and construction in Ivory Coast",
         "hero_cta": "Request a quote",
         "hero_contact": "Contact Us",
@@ -446,7 +446,7 @@ const translations = {
         "logistics_consulting_desc": "Consulting services to optimize your supply chain and reduce your logistics costs.",
         
         // About section
-        "about_tagline": "Together, towards tomorrow's Africa.",
+        "about_tagline": "Together, towards tomorrow's Africa !",
         "about_desc_1": "Founded with the vision of contributing to the economic development of Ivory Coast and Africa, AFRIK EXPRESS & LOGISTICS is committed to providing high-quality transport and logistics services.",
         "about_desc_2": "Our modern fleet and experienced team allow us to efficiently respond to all your logistics needs.",
         "about_cta": "Learn more",
@@ -532,7 +532,7 @@ const translations = {
         
         // CTA
         "cta_title": "Ready to collaborate with us?",
-        "cta_text": "AFRIK EXPRESS & LOGISTICS, together, we move Africa forward.",
+        "cta_text": "AFRIK EXPRESS & LOGISTICS",
         "cta_button": "Contact us now",
         
         // Footer
