@@ -15,4 +15,5 @@ Site web professionnel pour AFRIK EXPRESS & LOGISTICS, une entreprise de transpo
 - Design moderne et adaptatif
 
 ## Déploiement
-Le site est déployé sur Netlify à l'adresse : [afrik-express-logistics.netlify.app](https://afrik-express-logistics.netlify.app)
+Le site est déployé à l'adresse : 
+[ael-ci.com](https://ael-ci.com/)
