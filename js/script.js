@@ -117,53 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Form validation for contact form
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simple validation
-            let isValid = true;
-            const requiredFields = contactForm.querySelectorAll('[required]');
-            
-            requiredFields.forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.classList.add('error');
-                } else {
-                    field.classList.remove('error');
-                }
-            });
-            
-            // Email validation
-            const emailField = contactForm.querySelector('input[type="email"]');
-            if (emailField && emailField.value) {
-                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailPattern.test(emailField.value)) {
-                    isValid = false;
-                    emailField.classList.add('error');
-                }
-            }
-            
-            if (isValid) {
-                // Show success message (in a real scenario, this would submit the form)
-                const successMessage = document.createElement('div');
-                successMessage.className = 'success-message';
-                const language = localStorage.getItem('language') || 'fr';
-                successMessage.textContent = translations[language]['form_success'];
-                
-                const formContainer = contactForm.parentElement;
-                formContainer.appendChild(successMessage);
-                
-                // Reset form
-                contactForm.reset();
-                
-                // Remove success message after 5 seconds
-                setTimeout(() => {
-                    successMessage.remove();
-                }, 5000);
-            }
-        });
-    }
+    // Suppression du code de gestion du formulaire de contact
+    // Ce code est maintenant géré directement dans contact.html
 });
