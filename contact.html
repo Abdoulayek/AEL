@@ -382,6 +382,7 @@
 
     <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/config.js"></script>
     <script>
         // Solution ultra-simple pour le formulaire de contact
         document.addEventListener('DOMContentLoaded', function() {
@@ -411,7 +412,7 @@
                         },
                         to: [
                             {
-                                email: "abdoulayekante863@gmail.com",
+                                email: "etoure@ael-ci.com",
                                 name: "AEL Contact"
                             }
                         ],
@@ -433,7 +434,7 @@
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
-                            'api-key': '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'
+                            'api-key': config.BREVO_API_KEY
                         },
                         body: JSON.stringify(emailData)
                     })

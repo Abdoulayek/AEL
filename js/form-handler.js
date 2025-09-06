@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Configuration de la requête
         const url = 'https://api.brevo.com/v3/smtp/email';
-        const apiKey = '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';
+        const apiKey = '<!-- BREVO_API_KEY -->';
         
         // Format de requête simplifié sans template
         const data = {

@@ -1,2 +1,6 @@
 # Local Netlify folder
 .netlify
+
+# Configuration files with sensitive data
+js/config.js
+.env
