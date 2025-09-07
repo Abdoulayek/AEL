@@ -24,12 +24,37 @@ const translations = {
         "hero_cta": "Demandez un devis",
         "hero_contact": "Contactez-nous",
         
-        // À propos
+        // Qui sommes-nous
         "about_title": "Qui sommes-nous ?",
         "about_subtitle": "Découvrez AFRIK EXPRESS & LOGISTICS",
         "about_text1": "AFRIK EXPRESS & LOGISTICS est une entreprise de transport et de logistique basée en Côte d'Ivoire, spécialisée dans le transport de marchandises, carburants et services BTP à travers l'Afrique de l'Ouest.",
         "about_text2": "Fondée avec la vision de contribuer au développement économique de l'Afrique, notre entreprise s'engage à fournir des services logistiques fiables, efficaces et de haute qualité qui répondent aux besoins spécifiques de nos clients.",
         "about_text3": "Avec une flotte moderne et une équipe de professionnels expérimentés, nous offrons des solutions logistiques complètes adaptées aux défis uniques du marché africain. Notre engagement envers l'excellence et l'innovation nous positionne comme un partenaire de confiance pour toutes vos exigences en matière de transport et de logistique.",
+        
+        // Notre Mission
+        "our_mission_title": "Notre Mission",
+        "our_mission_subtitle": "Notre mission",
+        "our_mission_text1": "Notre mission est de faciliter le commerce et le développement économique en Afrique de l'Ouest en fournissant des solutions logistiques fiables, efficaces et innovantes qui répondent aux besoins spécifiques de nos clients.",
+        "our_mission_text2": "Nous nous engageons à:",
+        "our_mission_point1": "Offrir des services de transport et de logistique de haute qualité qui dépassent les attentes de nos clients",
+        "our_mission_point2": "Maintenir les normes les plus élevées de sécurité et de fiabilité dans toutes nos opérations",
+        "our_mission_point3": "Contribuer au développement économique des communautés dans lesquelles nous opérons",
+        "our_mission_point4": "Adopter des pratiques commerciales durables et respectueuses de l'environnement",
+        
+        // Notre Vision
+        "our_vision_title": "Notre Vision",
+        "our_vision_subtitle": "Notre vision",
+        "our_vision_text1": "Notre vision est de devenir le leader incontesté des services de transport et de logistique en Afrique de l'Ouest, reconnu pour notre excellence opérationnelle, notre innovation et notre engagement envers le développement durable.",
+        "our_vision_text2": "Nous aspirons à être:",
+        "our_vision_point1": "Le partenaire logistique privilégié des entreprises opérant en Afrique de l'Ouest",
+        "our_vision_point2": "Un moteur de croissance économique et de développement dans la région",
+        "our_vision_point3": "Un employeur de choix qui attire et retient les meilleurs talents",
+        "our_vision_point4": "Un modèle d'entreprise socialement responsable et respectueuse de l'environnement",
+        
+        // Notre engagement pour l'Afrique
+        "our_commitment_title": "Notre engagement pour l'Afrique",
+        "our_commitment_text1": "Chez AFRIK EXPRESS & LOGISTICS, nous croyons fermement au potentiel de l'Afrique de l'Ouest. Notre vision va au-delà des simples services logistiques - nous voulons être un acteur clé du développement économique de la région.",
+        "our_commitment_text2": "En investissant dans des technologies modernes, en formant notre personnel local et en adoptant des pratiques commerciales durables, nous contribuons à bâtir un avenir meilleur pour les communautés que nous servons.",
         "about_cta": "En savoir plus",
         
         // Statistiques
@@ -151,7 +176,7 @@ const translations = {
         "contact_send": "Envoyer le Message",
         "contact_location": "Notre Emplacement",
         "contact_address_title": "Siège Social",
-        "contact_address": "Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire",
+        "contact_address": "Boulevard FHB en face de solibra immeuble la Balance au 2 étage, Abidjan, Côte d'Ivoire",
         "contact_phone_title": "Téléphone",
         "contact_email_title": "Email",
         "form_name": "Nom",
@@ -324,7 +349,7 @@ const translations = {
         "cta_text_2": "Ensemble vers l'Afrique de demain !",
         "footer_contact": "Contact",
         "footer_contact_title": "Contact",
-        "footer_address": "Boulevard Félix Houphouët Boigni, En face de solibra immeuble la balance au 2 eme étage, Abidjan, Côte d'Ivoire",
+        "footer_address": "Boulevard FHB en face de solibra immeuble la Balance au 2 étage, Abidjan, Côte d'Ivoire",
         "footer_service_goods": "Transport de Marchandises",
         "footer_service_fuel": "Transport de Carburants",
         "footer_service_mining": "Transport de produits miniers",
@@ -394,6 +419,31 @@ const translations = {
         "about_text2": "Founded with the vision of contributing to Africa's economic development, our company is committed to providing reliable, efficient, and high-quality logistics services that meet the specific needs of our clients.",
         "about_text3": "With a modern fleet and a team of experienced professionals, we offer comprehensive logistics solutions adapted to the unique challenges of the African market. Our commitment to excellence and innovation positions us as a trusted partner for all your transport and logistics requirements.",
         "about_cta": "Learn more",
+        
+        // Our Mission
+        "our_mission_title": "Our Mission",
+        "our_mission_subtitle": "Our mission",
+        "our_mission_text1": "Our mission is to facilitate trade and economic development in West Africa by providing reliable, efficient and innovative logistics solutions that meet the specific needs of our clients.",
+        "our_mission_text2": "We are committed to:",
+        "our_mission_point1": "Providing high-quality transport and logistics services that exceed our clients' expectations",
+        "our_mission_point2": "Maintaining the highest standards of safety and reliability in all our operations",
+        "our_mission_point3": "Contributing to the economic development of the communities in which we operate",
+        "our_mission_point4": "Adopting sustainable and environmentally friendly business practices",
+        
+        // Our Vision
+        "our_vision_title": "Our Vision",
+        "our_vision_subtitle": "Our vision",
+        "our_vision_text1": "Our vision is to become the undisputed leader in transport and logistics services in West Africa, recognized for our operational excellence, innovation and commitment to sustainable development.",
+        "our_vision_text2": "We aspire to be:",
+        "our_vision_point1": "The preferred logistics partner for companies operating in West Africa",
+        "our_vision_point2": "A driver of economic growth and development in the region",
+        "our_vision_point3": "An employer of choice that attracts and retains the best talent",
+        "our_vision_point4": "A model of socially responsible and environmentally friendly business",
+        
+        // Our Commitment to Africa
+        "our_commitment_title": "Our Commitment to Africa",
+        "our_commitment_text1": "At AFRIK EXPRESS & LOGISTICS, we firmly believe in the potential of West Africa. Our vision goes beyond simple logistics services - we want to be a key player in the economic development of the region.",
+        "our_commitment_text2": "By investing in modern technologies, training our local staff and adopting sustainable business practices, we contribute to building a better future for the communities we serve.",
         
         // Statistics
         "stat_experience": "Years of experience",
@@ -493,7 +543,7 @@ const translations = {
         "contact_intro": "Do you have questions about our services or would you like to get a personalized quote? Don't hesitate to contact us. Our team is at your disposal to answer all your requests.",
         "contact_office": "Head Office",
         "contact_address1": "Boulevard Félix Houphouët Boigni",
-        "contact_address2": "Opposite Solibra building, 2nd floor, BP 1327",
+        "contact_address2": "Opposite Solibra building, 2nd floor",
         "contact_address3": "PO Box 1327",
         "contact_phone_title": "Phone",
         "contact_email_title": "Email",
@@ -694,7 +744,7 @@ const translations = {
         "footer_services": "Services",
         "footer_contact": "Contact",
         "footer_contact_title": "Contact",
-        "footer_address": "Boulevard Félix Houphouët Boigni, Opposite Solibra building La Balance on the 2nd floor, Abidjan, Ivory Coast",
+        "footer_address": "Square FHB front of solibra building la Balance at 2nd floor, Abidjan, Ivory Coast",
         "footer_service_goods": "Goods Transport",
         "footer_service_fuel": "Fuel Transport",
         "footer_service_mining": "Mining Products Transport",
