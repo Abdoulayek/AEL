@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         
         // Envoyer au webhook n8n
-        fetch('https://dataventuren8n.acserveur.com/webhook-test/ael-contact-form', {
+        fetch('https://dataventuren8n.acserveur.com/webhook/ael-contact-form', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
